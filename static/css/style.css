@@ -1,0 +1,177 @@
+/* Animations for messages */
+.message-bubble {
+    animation: messageSlide 0.3s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes messageSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom scrollbar */
+#chat-messages {
+    scrollbar-width: thin;
+    scrollbar-color: #CBD5E0 #EDF2F7;
+}
+
+#chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-messages::-webkit-scrollbar-track {
+    background: #EDF2F7;
+    border-radius: 4px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+    background-color: #CBD5E0;
+    border-radius: 4px;
+    border: 2px solid #EDF2F7;
+}
+
+/* Message transitions */
+.message-bubble {
+    transition: all 0.2s ease-in-out;
+}
+
+.message-bubble:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Sources section animation */
+.message-bubble template {
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Input focus effects */
+input:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+    outline: none;
+}
+
+/* Button hover animation */
+button {
+    transition: transform 0.1s ease-in-out;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+/* Markdown styling */
+.prose {
+    max-width: 100%;
+}
+
+.prose p {
+    margin: 0.5em 0;
+}
+
+.prose ul, .prose ol {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+}
+
+.prose li {
+    margin: 0.25em 0;
+}
+
+.prose blockquote {
+    border-left: 3px solid currentColor;
+    margin: 0.5em 0;
+    padding-left: 1em;
+    opacity: 0.8;
+}
+
+.message-bubble .prose {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.message-bubble pre {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.message-bubble code {
+    font-size: 0.9em;
+    padding: 0.2em 0.4em;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+/* Sources section styling */
+.sources-content {
+    border-left: 3px solid #4B5563;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+    transition: max-height 0.3s ease-out;
+}
+
+.source-metadata {
+    font-size: 0.75rem;
+    color: #6B7280;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.source-content {
+    padding-top: 0.5rem;
+}
+
+.sources-content.expanded {
+    max-height: none;
+}
+
+.sources-content .expand-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    color: #4B5563;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+
+/* Transition for sources dropdown */
+.transition {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+.transform {
+    transform: translateY(0);
+}
+
+.-translate-y-2 {
+    transform: translateY(-0.5rem);
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
