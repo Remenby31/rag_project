@@ -16,7 +16,7 @@ Ce projet implémente un système RAG (Retrieval-Augmented Generation) qui perme
 
 1. Clonez le repository :
 ```bash
-git clone [url-du-repo]
+git clone https://github.com/Remenby31/rag_project
 cd rag_project
 ```
 
@@ -69,13 +69,13 @@ python app.py
 
 ## ⚠️ Prérequis
 
-- Python 3.8+
+- Python 3.10
+- Clé API OpenAI
 - CUDA 11.8 (pour transcription locale)
-- Clé API OpenAI (pour transcription cloud)
 - GPU compatible CUDA (pour mode local)
 
 ## 📝 Notes
 
 - Les documents sont stockés dans le dossier `files`
-- Formats supportés : .txt, .pdf, .doc, .docx
+- Formats supportés par le RAG pour l'instant : .txt
 - La base de connaissances est mise à jour automatiquement
