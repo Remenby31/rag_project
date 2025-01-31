@@ -1,22 +1,36 @@
-# RAG Project - Assistant de Recherche et Réponse Intelligent
+# UltimateRAG
 
-Ce projet implémente un système RAG (Retrieval-Augmented Generation) qui permet de créer automatiquement une base de connaissances à partir de contenus web et d'interagir avec celle-ci via une interface web.
+UltimateRAG est une application web de Question-Réponse intelligente basée sur vos documents. Elle utilise la technologie RAG (Retrieval Augmented Generation) pour fournir des réponses précises et contextuelles.
 
 ## 🌟 Fonctionnalités
 
-- Récupération et traitement automatique de contenu depuis YouTube
-- Transcription audio en deux modes :
-  - OpenAI Whisper (API cloud)
-  - Whisper local (avec support CUDA)
-- Interface web interactive pour les requêtes
-- Système RAG pour des réponses contextuelles précises
-- Gestion des tâches asynchrones
+- Interface web moderne et responsive
+- Support multiple de modèles d'IA (OpenAI, Deepseek)
+- Import de documents par glisser-déposer ou sélection
+- Formats supportés : PDF, TXT, DOCX
+- Gestion des documents (visualisation, suppression)
+- Réponses en temps réel avec streaming
+- Affichage des sources utilisées pour chaque réponse
+- Interface de gestion de fichiers dédiée
+
+## 🛠️ Technologies
+
+- **Backend**: Flask (Python)
+- **Frontend**: HTML, CSS, JavaScript (Vanilla)
+- **Vector Store**: Chroma
+- **Embeddings**: HuggingFace (MiniLM-L6-v2)
+- **LLM**: OpenAI GPT-4 / Deepseek
+
+## 📋 Prérequis
+
+- Python 3.8+
+- Une clé API OpenAI ou Deepseek
 
 ## 🚀 Installation
 
 1. Clonez le repository :
 ```bash
-git clone https://github.com/Remenby31/rag_project
+git clone [url-du-repo]
 cd rag_project
 ```
 
@@ -25,57 +39,49 @@ cd rag_project
 pip install -r requirements.txt
 ```
 
-3. Configuration de CUDA (pour transcription locale) :
-- Installez CUDA 11.8
-- Vérifiez la compatibilité avec votre GPU
-
-4. Configuration des variables d'environnement :
-Créez un fichier `.env` à la racine du projet :
-```env
-OPENAI_API_KEY=votre_clé_api_openai
-```
-
-## 💻 Utilisation
-
-1. Démarrez l'application :
+3. Lancez l'application :
 ```bash
 python app.py
 ```
 
-2. Accédez à l'interface web :
-- URL : `http://localhost:5000`
-- Page principale : Chat et recherche
-- YouTube Manager : `/youtube-manager`
+L'application sera accessible à l'adresse `http://localhost:5000`
 
-## 🔧 Architecture
+## 🔧 Configuration
 
-- `app.py` : Point d'entrée de l'application Flask
-- `/services` : Services métier (YouTube, RAG, etc.)
-- `/utils` : Utilitaires et helpers
-- `/templates` : Interface web
-- `/files` : Stockage des documents indexés
+- Configurez votre clé API via l'interface (icône engrenage)
+- Les documents importés sont stockés dans `cache/uploads`
+- Le vector store est persisté dans `cache/vector_store`
 
-## 🔄 Modes de Transcription
+## 🏗️ Structure du Projet
 
-### Mode OpenAI (Cloud)
-- Nécessite une clé API OpenAI
-- Plus rapide, moins de ressources locales
-- Qualité de transcription supérieure
+```
+rag_project/
+├── app.py              # Application Flask principale
+├── static/
+│   ├── css/           # Styles CSS
+│   └── js/            # Scripts JavaScript
+├── templates/         # Templates HTML
+├── cache/
+│   ├── uploads/      # Documents uploadés
+│   └── vector_store/ # Base de données vectorielle
+└── requirements.txt   # Dépendances Python
+```
 
-### Mode Local (Whisper)
-- Nécessite CUDA 11.8
-- Fonctionne hors ligne
-- Utilisation intensive du GPU
+## 🛡️ Sécurité
 
-## ⚠️ Prérequis
+- Validation des types de fichiers
+- Sanitization des noms de fichiers
+- Protection XSS avec DOMPurify
+- Pas de stockage des clés API en base
 
-- Python 3.10
-- Clé API OpenAI
-- CUDA 11.8 (pour transcription locale)
-- GPU compatible CUDA (pour mode local)
+## 📝 Note
 
-## 📝 Notes
+Ce projet est conçu pour une utilisation en développement. Pour un déploiement en production, des mesures de sécurité supplémentaires sont recommandées.
 
-- Les documents sont stockés dans le dossier `files`
-- Formats supportés par le RAG pour l'instant : .txt
-- La base de connaissances est mise à jour automatiquement
+## 🤝 Contribution
+
+Les contributions sont bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
+
+## 📄 Licence
+
+[MIT License](LICENSE)

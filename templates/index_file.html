@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Documents - UltimateRAG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style_file.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1><i class="fas fa-folder-open"></i> Documents</h1>
+                <div class="stats">
+                    <span id="fileCount">0 fichiers</span>
+                    <span id="totalSize">0 Ko</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Rechercher...">
+                </div>
+                <button class="view-toggle" id="viewToggle">
+                    <i class="fas fa-th-large"></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="file-list" id="fileList">
+                <!-- Les fichiers seront injectés ici -->
+            </div>
+
+            <div class="drop-zone" id="dropZone">
+                <div class="drop-message">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Glissez vos fichiers ici</p>
+                    <span>ou</span>
+                    <label class="upload-button">
+                        Parcourir
+                        <input type="file" id="fileInput" multiple hidden>
+                    </label>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <template id="fileTemplate">
+        <div class="file-item">
+            <div class="file-icon">
+                <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="file-info">
+                <h3 class="file-name"></h3>
+                <span class="file-meta"></span>
+            </div>
+            <button class="delete-btn">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+    </template>
+
+    <script src="/static/js/script_file.js"></script>
+</body>
+</html>
