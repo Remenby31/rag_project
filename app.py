@@ -290,7 +290,4 @@ def get_file_size(filename):
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=False)
-
-
-#TODO:Rerol vers l'ancienne version des fichier css, js et html
+    app.run(host='0.0.0.0', port=18900, debug=False)
