@@ -100,6 +100,7 @@ header {
     animation: fadeIn 0.3s ease-out forwards;
     min-height: 80px;  /* Hauteur minimale fixe */
     width: 100%;      /* Largeur complète */
+    position: relative; /* Ajout de cette ligne */
 }
 
 .file-icon {
@@ -111,6 +112,23 @@ header {
     background: rgba(16, 163, 127, 0.1);
     border-radius: 8px;
     color: var(--primary);
+}
+
+/* Couleurs spécifiques pour chaque type de fichier */
+.fa-file-pdf {
+    color: #dc3545;
+}
+
+.fa-file-word {
+    color: #2b579a;
+}
+
+.fa-file-alt {
+    color: #718096;
+}
+
+.fa-file {
+    color: #4a5568;
 }
 
 .file-info {
@@ -188,6 +206,104 @@ header {
     background: #0d8466;
 }
 
+/* Back Button */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: rgba(16, 163, 127, 0.1);
+}
+
+.back-button i {
+    font-size: 0.9rem;
+}
+
+/* Remplacer les styles du Loading Overlay par : */
+.file-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.file-loading.hidden {
+    display: none;
+}
+
+/* Animation pour le spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* View Toggle Button */
+.view-toggle {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-toggle:hover {
+    background: #f0f0f0;
+    color: var(--primary);
+}
+
+.view-toggle i {
+    font-size: 1.1rem;
+}
+
+/* Styles pour la vue liste */
+.file-list.list-view {
+    grid-template-columns: 1fr;
+}
+
+.file-list.list-view .file-item {
+    flex-direction: row;
+    padding: 0.75rem 1.25rem;
+}
+
+.file-list.list-view .file-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.file-list.list-view .file-name {
+    margin-bottom: 0;
+    width: 300px;
+}
+
+.file-list.list-view .file-meta {
+    margin-bottom: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -206,5 +322,9 @@ header {
     
     .search-bar input {
         width: 100%;
+    }
+    
+    .back-button {
+        margin-bottom: 0.5rem;
     }
 }

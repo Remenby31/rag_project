@@ -1,6 +1,8 @@
-# UltimateRAG
+# knowledgeRAG
 
-UltimateRAG est une application web de Question-Réponse intelligente basée sur vos documents. Elle utilise la technologie RAG (Retrieval Augmented Generation) pour fournir des réponses précises et contextuelles.
+knowledgeRAG est une application web de Question-Réponse intelligente basée sur vos documents. Elle utilise la technologie RAG (Retrieval Augmented Generation) pour fournir des réponses précises et contextuelles.
+
+🌐 **Accès en ligne**: https://knowledgerag.duckdns.org/
 
 ## 🌟 Fonctionnalités
 

@@ -44,6 +44,23 @@ class FileManager {
         }
     }
 
+    getFileIcon(filename) {
+        const extension = filename.toLowerCase().split('.').pop();
+        switch (extension) {
+            case 'pdf':
+                return 'fa-file-pdf';
+            case 'doc':
+            case 'docx':
+                return 'fa-file-word';
+            case 'txt':
+                return 'fa-file-alt';
+            case 'rtf':
+                return 'fa-file-alt';
+            default:
+                return 'fa-file';
+        }
+    }
+
     renderFiles() {
         this.fileList.innerHTML = '';
         const filteredFiles = this.filterFiles();
@@ -51,7 +68,16 @@ class FileManager {
         filteredFiles.forEach(file => {
             const element = this.template.content.cloneNode(true);
             const fileItem = element.querySelector('.file-item');
+            fileItem.setAttribute('data-filename', file);
+            
+            const loading = element.querySelector('.file-loading');
+            loading.classList.add('hidden');
+            
             const fileInfo = element.querySelector('.file-info');
+            
+            // Mettre à jour l'icône en fonction du type de fichier
+            const iconClass = this.getFileIcon(file);
+            fileItem.querySelector('.file-icon i').className = `fas ${iconClass}`;
             
             // Ajouter le nom du fichier avec une classe pour contrôler l'overflow
             fileItem.querySelector('.file-name').textContent = file;
@@ -85,6 +111,10 @@ class FileManager {
     async deleteFile(filename) {
         if (!confirm(`Supprimer ${filename} ?`)) return;
 
+        const fileItem = this.fileList.querySelector(`[data-filename="${filename}"]`);
+        const loading = fileItem.querySelector('.file-loading');
+        loading.classList.remove('hidden');
+
         try {
             const response = await fetch(`/delete/${filename}`, {
                 method: 'DELETE'
@@ -99,6 +129,7 @@ class FileManager {
             }
         } catch (error) {
             console.error('Erreur:', error);
+            loading.classList.add('hidden');
         }
     }
 
@@ -111,10 +142,19 @@ class FileManager {
 
     toggleView() {
         this.isGridView = !this.isGridView;
-        this.fileList.classList.toggle('grid-view');
-        this.viewToggle.innerHTML = this.isGridView ? 
-            '<i class="fas fa-list"></i>' : 
-            '<i class="fas fa-th-large"></i>';
+        this.fileList.classList.toggle('list-view');
+        const icon = this.viewToggle.querySelector('i');
+        icon.className = this.isGridView ? 
+            'fas fa-list' : 
+            'fas fa-th-large';
+        
+        // Ajouter une animation subtile
+        this.fileList.style.opacity = '0';
+        this.fileList.style.transition = 'opacity 0.2s ease-out';
+        
+        setTimeout(() => {
+            this.fileList.style.opacity = '1';
+        }, 50);
     }
 
     updateStats() {
@@ -135,37 +175,45 @@ class FileManager {
     }
 
     async uploadFiles(files) {
-        const formData = new FormData();
-        Array.from(files).forEach(file => {
+        const uploads = Array.from(files).map(async file => {
+            const formData = new FormData();
             formData.append('file', file);
-        });
-        
-        // Ajouter la clé API depuis les cookies
-        const apiKey = this.getCookie('api_key');
-        if (!apiKey) {
-            console.error('Clé API manquante');
-            return;
-        }
-        formData.append('api_key', apiKey);
-
-        try {
-            const response = await fetch('/upload', {
-                method: 'POST',
-                body: formData
-            });
-
-            if (!response.ok) {
-                const error = await response.json();
-                throw new Error(error.error || 'Erreur lors de l\'upload');
+            
+            const apiKey = this.getCookie('api_key');
+            if (!apiKey) {
+                console.error('Clé API manquante');
+                return;
             }
+            formData.append('api_key', apiKey);
 
-            await this.loadFiles();
-        } catch (error) {
-            console.error('Erreur:', error.message);
-        }
+            // Créer un élément temporaire pour le fichier en cours d'upload
+            const tempElement = this.template.content.cloneNode(true);
+            const fileItem = tempElement.querySelector('.file-item');
+            fileItem.setAttribute('data-filename', file.name);
+            fileItem.querySelector('.file-name').textContent = file.name;
+            fileItem.querySelector('.file-meta').textContent = this.formatFileSize(file.size);
+            fileItem.querySelector('.file-loading').classList.remove('hidden');
+            
+            this.fileList.appendChild(tempElement);
+
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error('Erreur lors de l\'upload');
+                }
+            } catch (error) {
+                console.error('Erreur:', error.message);
+            }
+        });
+
+        await Promise.all(uploads);
+        await this.loadFiles(); // Recharger tous les fichiers après les uploads
     }
 
-    // Ajouter une méthode pour récupérer les cookies
     getCookie(name) {
         return document.cookie.split('; ')
             .find(row => row.startsWith(`${name}=`))

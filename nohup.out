@@ -1,0 +1,82 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+2025-01-31 15:22:08,984 - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:18900
+ * Running on http://192.168.1.33:18900
+2025-01-31 15:22:08,984 - INFO - _internal - [33mPress CTRL+C to quit[0m
+2025-01-31 15:22:16,720 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 15:22:16] "GET / HTTP/1.1" 200 -
+2025-01-31 15:22:16,842 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 15:22:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 15:22:16,896 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 15:22:16] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 15:22:17,219 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 15:22:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-31 15:22:23,197 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 15:22:23] "GET /files HTTP/1.1" 200 -
+2025-01-31 15:22:23,321 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 15:22:23] "GET /static/css/style_file.css HTTP/1.1" 200 -
+2025-01-31 15:22:23,324 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 15:22:23] "GET /static/js/script_file.js HTTP/1.1" 200 -
+2025-01-31 15:22:23,404 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 15:22:23] "GET /list_files HTTP/1.1" 200 -
+2025-01-31 15:30:45,730 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 15:30:45] "GET / HTTP/1.1" 200 -
+2025-01-31 16:07:59,015 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 16:07:59] "GET / HTTP/1.1" 200 -
+2025-01-31 16:10:55,061 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 16:10:55] "GET / HTTP/1.1" 200 -
+2025-01-31 16:12:06,040 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 16:12:06] "GET / HTTP/1.1" 200 -
+2025-01-31 16:38:43,205 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 16:38:43] "GET / HTTP/1.1" 200 -
+2025-01-31 16:38:44,090 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 16:38:44] "GET / HTTP/1.1" 200 -
+2025-01-31 16:53:38,059 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 16:53:38] "GET / HTTP/1.1" 200 -
+2025-01-31 16:53:38,115 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 16:53:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 16:53:40,499 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 16:53:40] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 17:07:20,387 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 17:07:20] "GET / HTTP/1.1" 200 -
+2025-01-31 17:17:48,285 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 17:17:48] "GET / HTTP/1.1" 200 -
+2025-01-31 17:17:48,294 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 17:17:48] "GET / HTTP/1.1" 200 -
+2025-01-31 17:42:24,616 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 17:42:24] "GET / HTTP/1.1" 200 -
+2025-01-31 17:45:10,131 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 17:45:10] "GET / HTTP/1.1" 200 -
+2025-01-31 18:11:17,798 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 18:11:17] "GET / HTTP/1.1" 200 -
+2025-01-31 18:11:18,076 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 18:11:18] "GET / HTTP/1.1" 200 -
+2025-01-31 18:11:18,159 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 18:11:18] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 18:11:18,190 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 18:11:18] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 18:11:18,333 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 18:11:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-31 18:11:18,459 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 18:11:18] "GET / HTTP/1.1" 200 -
+2025-01-31 18:11:18,598 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 18:11:18] "[33mHEAD /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-31 19:09:15,908 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:09:15] "GET /files HTTP/1.1" 200 -
+2025-01-31 19:09:16,000 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:09:15] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-01-31 19:09:16,003 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:09:16] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-01-31 19:09:16,082 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:09:16] "GET /list_files HTTP/1.1" 200 -
+2025-01-31 19:09:16,096 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:09:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-31 19:09:20,945 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:09:20] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-01-31 19:14:21,906 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:21] "GET /files HTTP/1.1" 200 -
+2025-01-31 19:14:21,997 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:21] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-01-31 19:14:22,000 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:22] "GET /static/css/style_file.css HTTP/1.1" 200 -
+2025-01-31 19:14:22,078 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:22] "GET /list_files HTTP/1.1" 200 -
+2025-01-31 19:14:23,678 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:23] "GET /files HTTP/1.1" 200 -
+2025-01-31 19:14:23,768 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:23] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-01-31 19:14:23,768 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:23] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-01-31 19:14:23,879 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:23] "GET /list_files HTTP/1.1" 200 -
+2025-01-31 19:14:24,399 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "GET /files HTTP/1.1" 200 -
+2025-01-31 19:14:24,496 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-01-31 19:14:24,497 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-01-31 19:14:24,556 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "GET /files HTTP/1.1" 200 -
+2025-01-31 19:14:24,558 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "GET /list_files HTTP/1.1" 200 -
+2025-01-31 19:14:24,660 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-01-31 19:14:24,662 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-01-31 19:14:24,724 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "GET /files HTTP/1.1" 200 -
+2025-01-31 19:14:24,728 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "GET /list_files HTTP/1.1" 200 -
+2025-01-31 19:14:24,824 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-01-31 19:14:24,826 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-01-31 19:14:24,872 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "GET /files HTTP/1.1" 200 -
+2025-01-31 19:14:24,889 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "GET /list_files HTTP/1.1" 200 -
+2025-01-31 19:14:24,990 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-01-31 19:14:24,993 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:24] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-01-31 19:14:25,056 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:25] "GET /list_files HTTP/1.1" 200 -
+2025-01-31 19:14:26,012 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:26] "GET /files HTTP/1.1" 200 -
+2025-01-31 19:14:26,106 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:26] "GET /static/css/style_file.css HTTP/1.1" 200 -
+2025-01-31 19:14:26,109 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:26] "GET /static/js/script_file.js HTTP/1.1" 200 -
+2025-01-31 19:14:26,223 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:26] "GET /list_files HTTP/1.1" 200 -
+2025-01-31 19:14:26,375 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-31 19:14:44,205 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:44] "GET /files HTTP/1.1" 200 -
+2025-01-31 19:14:44,300 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:44] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-01-31 19:14:44,309 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:44] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-01-31 19:14:44,381 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:14:44] "GET /list_files HTTP/1.1" 200 -
+2025-01-31 19:15:01,781 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:15:01] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-01-31 19:15:19,045 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:15:19] "GET / HTTP/1.1" 200 -
+2025-01-31 19:15:19,324 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:15:19] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 19:15:19,474 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:15:19] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 19:15:27,045 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:15:27] "GET / HTTP/1.1" 200 -
+2025-01-31 19:15:27,559 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:15:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 19:15:27,840 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:15:27] "GET /static/js/script.js HTTP/1.1" 200 -

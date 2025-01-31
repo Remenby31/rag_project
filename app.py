@@ -116,13 +116,17 @@ def process_documents():
 def get_vector_store():
     logging.info("Initialisation du vector store")
     try:
+        if not os.path.exists(PERSIST_DIRECTORY) or not os.listdir(PERSIST_DIRECTORY):
+            logging.warning("Le dossier de persistance n'existe pas ou est vide")
+            return None
+            
         embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
         vector_store = Chroma(persist_directory=PERSIST_DIRECTORY, embedding_function=embeddings)
         logging.info(f"Vector store initialisé avec succès. Collection count: {vector_store._collection.count()}")
         return vector_store
     except Exception as e:
         logging.error(f"Erreur lors de l'initialisation du vector store: {str(e)}", exc_info=True)
-        raise
+        return None
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
@@ -189,6 +193,7 @@ def chat():
     message = request.args.get('message')
     api_key = request.args.get('api_key')
     provider = request.args.get('provider', 'openai')
+    history = json.loads(request.args.get('history', '[]'))  # Récupération de l'historique
     
     if not api_key or not message:
         logging.error('Clé API ou message manquant')
@@ -199,30 +204,33 @@ def chat():
         return jsonify({'error': 'Clé API invalide'}), 400
 
     try:
+        # Initialiser les variables context et sources
+        context = ""
+        sources = []
+        
+        # Tenter de récupérer le contexte si disponible
         vectordb = get_vector_store()
-        collection_count = vectordb._collection.count()
-        
-        if (collection_count == 0):
-            logging.warning("Aucun document trouvé dans la base de données")
-            return jsonify({'error': 'Aucun document dans la base de données'}), 400
-            
-        actual_results = min(NB_RESULTS, collection_count)
-        docs = vectordb.similarity_search(message, k=actual_results)
-        
-        sources = [{
-            "source": doc.metadata['source'],
-            "content": doc.page_content[:500] + "...",
-            "id": str(uuid.uuid4())[:8]
-        } for doc in docs]
-        
-        # Encoder correctement le contexte
-        context = "\n\n".join([doc.page_content for doc in docs])
-        context = context.encode('utf-8').decode('utf-8')
+        if vectordb is not None:
+            collection_count = vectordb._collection.count()
+            if collection_count > 0:
+                actual_results = min(NB_RESULTS, collection_count)
+                docs = vectordb.similarity_search(message, k=actual_results)
+                context = "\n\n".join([doc.page_content for doc in docs])
+                sources = [{
+                    "source": doc.metadata['source'],
+                    "content": doc.page_content[:500] + "...",
+                    "id": str(uuid.uuid4())[:8]
+                } for doc in docs]
 
         def generate():
             try:
-                sources_json = json.dumps({'type': 'sources', 'content': sources})
-                yield f"data: {sources_json}\n\n"
+                # Envoyer immédiatement un flush pour établir la connexion
+                yield "data: {}\n\n"
+
+                # Envoyer les sources si elles existent
+                if sources:
+                    sources_json = json.dumps({'type': 'sources', 'content': sources})
+                    yield f"data: {sources_json}\n\n"
                 
                 client = OpenAI(
                     api_key=api_key,
@@ -231,11 +239,21 @@ def chat():
                 
                 model = "deepseek-chat" if provider == "deepseek" else "gpt-4"
                 
-                # Assurer que les messages sont encodés correctement
-                messages = [
-                    {"role": "system", "content": f"Contexte:\n{context}"},
-                    {"role": "user", "content": message.encode('utf-8').decode('utf-8')}
-                ]
+                # Amélioration du système de messages
+                system_message = (
+                    "Tu es un assistant IA avec une excellente mémoire. "
+                    "Utilise le contexte suivant pour répondre aux questions, "
+                    "mais souviens-toi aussi des échanges précédents pour maintenir la cohérence :"
+                    f"\n\nContexte:\n{context}"
+                )
+                
+                messages = [{"role": "system", "content": system_message}]
+                
+                # Limitation de l'historique aux 10 derniers messages pour éviter les dépassements
+                if history:
+                    messages.extend(history[-10:])
+                
+                messages.append({"role": "user", "content": message})
                 
                 response = client.chat.completions.create(
                     model=model,
@@ -248,17 +266,21 @@ def chat():
                         content = chunk.choices[0].delta.content
                         chunk_json = json.dumps({'type': 'response', 'content': content})
                         yield f"data: {chunk_json}\n\n"
+                        if hasattr(response, 'flush'):
+                            response.flush()
 
                 yield f"data: {json.dumps({'type': 'status', 'content': 'done'})}\n\n"
-                logging.info("Génération de la réponse terminée avec succès")
             
             except Exception as e:
-                logging.error(f"Erreur pendant la génération de la réponse: {str(e)}", exc_info=True)
+                logging.error(f"Erreur pendant la génération: {str(e)}", exc_info=True)
                 error_json = json.dumps({'type': 'error', 'content': str(e)})
                 yield f"data: {error_json}\n\n"
                 yield f"data: {json.dumps({'type': 'status', 'content': 'done'})}\n\n"
 
-        return Response(generate(), mimetype='text/event-stream')
+        response = Response(generate(), mimetype='text/event-stream')
+        response.headers['Cache-Control'] = 'no-cache'
+        response.headers['X-Accel-Buffering'] = 'no'
+        return response
 
     except Exception as e:
         logging.error(f'Erreur globale du chat: {str(e)}', exc_info=True)

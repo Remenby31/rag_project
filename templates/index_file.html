@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion des Documents - UltimateRAG</title>
+    <title>Gestion des Documents - knowledgeRAG</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/static/css/style_file.css">
 </head>
 <body>
     <div class="container">
+        <!-- Supprimer l'overlay global de chargement -->
         <header>
             <div class="header-left">
+                <a href="/" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Retour au chat</span>
+                </a>
                 <h1><i class="fas fa-folder-open"></i> Documents</h1>
                 <div class="stats">
                     <span id="fileCount">0 fichiers</span>
@@ -22,8 +27,8 @@
                     <i class="fas fa-search"></i>
                     <input type="text" id="searchInput" placeholder="Rechercher...">
                 </div>
-                <button class="view-toggle" id="viewToggle">
-                    <i class="fas fa-th-large"></i>
+                <button class="view-toggle" id="viewToggle" title="Changer la vue">
+                    <i class="fas fa-list"></i>
                 </button>
             </div>
         </header>
@@ -49,8 +54,12 @@
 
     <template id="fileTemplate">
         <div class="file-item">
+            <!-- Ajout du loader dans le template -->
+            <div class="file-loading">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
             <div class="file-icon">
-                <i class="fas fa-file-pdf"></i>
+                <i class="fas fa-file"></i>
             </div>
             <div class="file-info">
                 <h3 class="file-name"></h3>
