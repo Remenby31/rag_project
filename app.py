@@ -11,6 +11,8 @@ from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 import PyPDF2
 from openai import OpenAI
+from chromadb.config import Settings
+
 
 # Désactivation de la télémétrie Chroma
 os.environ['ANONYMIZED_TELEMETRY'] = 'False'
@@ -67,51 +69,62 @@ def read_file(file_path):
         raise ValueError(f"Type de fichier non supporté: {extension}")
 
 def process_documents():
-    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
-    
-    # Vérifier si le vector store existe déjà
-    if os.path.exists(PERSIST_DIRECTORY):
-        vector_store = Chroma(persist_directory=PERSIST_DIRECTORY, embedding_function=embeddings)
-    else:
-        vector_store = None
+    try:
+        embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
 
-    text_splitter = TokenTextSplitter(
-        chunk_size=CHUNK_SIZE,
-        chunk_overlap=OVERLAP_SIZE
-    )
-
-    documents = []
-    metadatas = []
-    total_chunks = 0
-    
-    for filename in os.listdir(UPLOAD_FOLDER):
-        file_path = os.path.join(UPLOAD_FOLDER, filename)
-        try:
-            text = read_file(file_path)
-            chunks = text_splitter.split_text(text)
-            total_chunks += len(chunks)
-            
-            for chunk in chunks:
-                documents.append(chunk)
-                metadatas.append({"source": filename})
-                
-            logging.info(f"Fichier {filename} découpé en {len(chunks)} chunks")
-                
-        except Exception as e:
-            logging.error(f"Erreur de traitement de {filename}: {e}")
-
-    logging.info(f"Total de chunks générés: {total_chunks}")
-    
-    if documents:  # Seulement créer/mettre à jour si nous avons des documents
-        if vector_store is None:
-            Chroma.from_texts(
-                texts=documents,
-                embedding=embeddings,
-                metadatas=metadatas,
-                persist_directory=PERSIST_DIRECTORY
-            )
+        client_settings = Settings(
+            persist_directory=PERSIST_DIRECTORY,
+            anonymized_telemetry=False
+        )
+        
+        # Vérifier si le vector store existe déjà
+        if os.path.exists(PERSIST_DIRECTORY):
+            vector_store = Chroma(persist_directory=PERSIST_DIRECTORY, embedding_function=embeddings)
         else:
-            vector_store.add_texts(texts=documents, metadatas=metadatas)
+            vector_store = None
+
+        text_splitter = TokenTextSplitter(
+            chunk_size=CHUNK_SIZE,
+            chunk_overlap=OVERLAP_SIZE
+        )
+
+        documents = []
+        metadatas = []
+        total_chunks = 0
+        
+        for filename in os.listdir(UPLOAD_FOLDER):
+            file_path = os.path.join(UPLOAD_FOLDER, filename)
+            try:
+                text = read_file(file_path)
+                chunks = text_splitter.split_text(text)
+                total_chunks += len(chunks)
+                
+                for chunk in chunks:
+                    documents.append(chunk)
+                    metadatas.append({"source": filename})
+                    
+                logging.info(f"Fichier {filename} découpé en {len(chunks)} chunks")
+                    
+            except Exception as e:
+                logging.error(f"Erreur de traitement de {filename}: {e}")
+
+        logging.info(f"Total de chunks générés: {total_chunks}")
+        
+        if documents:  # Seulement créer/mettre à jour si nous avons des documents
+            if vector_store is None:
+                Chroma.from_texts(
+                    texts=documents,
+                    embedding=embeddings,
+                    metadatas=metadatas,
+                    persist_directory=PERSIST_DIRECTORY
+                )
+            else:
+                vector_store.add_texts(texts=documents, metadatas=metadatas)
+
+            vector_store.persist()
+    except Exception as e:
+        logging.error(f"Erreur lors du traitement des documents: {str(e)}")
+        return False
 
 def get_vector_store():
     logging.info("Initialisation du vector store")
@@ -221,6 +234,22 @@ def chat():
                     "content": doc.page_content[:500] + "...",
                     "id": str(uuid.uuid4())[:8]
                 } for doc in docs]
+        else:
+            logging.info("Vectordb non initialisé, on l'initialise maintenant a partir des fichiers dans UPLOAD_FOLDER")
+            process_documents()
+            vectordb = get_vector_store()
+            if vectordb is not None:
+                collection_count = vectordb._collection.count()
+                if collection_count > 0:
+                    actual_results = min(NB_RESULTS, collection_count)
+                    docs = vectordb.similarity_search(message, k=actual_results)
+                    context = "\n\n".join([doc.page_content for doc in docs])
+                    sources = [{
+                        "source": doc.metadata['source'],
+                        "content": doc.page_content[:500] + "...",
+                        "id": str(uuid.uuid4())[:8]
+                    } for doc in docs]
+
 
         def generate():
             try:
@@ -237,7 +266,7 @@ def chat():
                     base_url="https://api.deepseek.com" if provider == "deepseek" else None
                 )
                 
-                model = "deepseek-chat" if provider == "deepseek" else "gpt-4"
+                model = "deepseek-chat" if provider == "deepseek" else "gpt-4o"
                 
                 # Amélioration du système de messages
                 system_message = (
@@ -290,6 +319,14 @@ def chat():
 def set_api_key():
     session['api_key'] = request.json.get('api_key')
     return jsonify({'message': 'Clé API enregistrée'})
+
+@app.route('/refresh_vector_db', methods=['POST'])
+def refresh_vector_db():
+    try:
+        process_documents()
+        return jsonify({'message': 'Vecteur DB rafraîchi'}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/')
 def index():

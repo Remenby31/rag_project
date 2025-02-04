@@ -80,3 +80,613 @@
 2025-01-31 19:15:27,045 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:15:27] "GET / HTTP/1.1" 200 -
 2025-01-31 19:15:27,559 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:15:27] "GET /static/css/style.css HTTP/1.1" 200 -
 2025-01-31 19:15:27,840 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 19:15:27] "GET /static/js/script.js HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+2025-01-31 21:02:58,078 - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:18900
+ * Running on http://192.168.1.33:18900
+2025-01-31 21:02:58,079 - INFO - _internal - [33mPress CTRL+C to quit[0m
+2025-01-31 21:02:59,862 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:02:59] "GET / HTTP/1.1" 200 -
+2025-01-31 21:02:59,973 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:02:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-31 21:02:59,973 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:02:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-31 21:03:09,544 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:03:09] "GET / HTTP/1.1" 200 -
+2025-01-31 21:03:09,948 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:03:09] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 21:03:10,664 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:03:10] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 21:03:13,952 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:03:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-31 21:04:22,358 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:04:22] "GET / HTTP/1.1" 200 -
+2025-01-31 21:04:32,062 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:04:32] "GET / HTTP/1.1" 200 -
+2025-01-31 21:04:32,710 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:04:32] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 21:04:35,511 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:04:35] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 21:04:43,097 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:04:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-31 21:09:26,282 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:09:26] "HEAD / HTTP/1.1" 200 -
+2025-01-31 21:09:27,163 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:09:27] "GET / HTTP/1.1" 200 -
+2025-01-31 21:10:58,130 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:10:58] "GET / HTTP/1.1" 200 -
+2025-01-31 21:10:58,840 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:10:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 21:11:01,941 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:11:01] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 21:11:06,354 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:11:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-31 21:13:33,100 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:13:33] "GET / HTTP/1.1" 200 -
+2025-01-31 21:13:33,210 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:13:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 21:13:33,385 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:13:33] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 21:13:33,870 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:13:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-31 21:16:32,895 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:16:32] "GET / HTTP/1.1" 200 -
+2025-01-31 21:16:33,952 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:16:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 21:16:34,794 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:16:34] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 21:16:50,374 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:16:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-31 21:17:15,088 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:17:15] "HEAD / HTTP/1.1" 200 -
+2025-01-31 21:17:15,915 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:17:15] "GET / HTTP/1.1" 200 -
+2025-01-31 21:35:30,442 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:35:30] "GET / HTTP/1.1" 200 -
+2025-01-31 21:35:30,877 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:35:30] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 21:35:31,029 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:35:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 21:35:34,818 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:35:34] "GET / HTTP/1.1" 200 -
+2025-01-31 21:35:35,059 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:35:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-31 21:35:35,283 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 21:35:35] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-31 22:11:03,509 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 22:11:03] "HEAD / HTTP/1.1" 200 -
+2025-01-31 22:11:04,501 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 22:11:04] "GET / HTTP/1.1" 200 -
+2025-01-31 22:23:31,638 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 22:23:31] "HEAD / HTTP/1.1" 200 -
+2025-01-31 22:23:32,618 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 22:23:32] "GET / HTTP/1.1" 200 -
+2025-01-31 22:25:30,516 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 22:25:30] "HEAD / HTTP/1.1" 200 -
+2025-01-31 22:25:31,535 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 22:25:31] "GET / HTTP/1.1" 200 -
+2025-01-31 23:03:55,019 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 23:03:55] "GET / HTTP/1.1" 200 -
+2025-01-31 23:03:55,394 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 23:03:55] "GET / HTTP/1.1" 200 -
+2025-01-31 23:10:53,696 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 23:10:53] "HEAD / HTTP/1.1" 200 -
+2025-01-31 23:10:55,039 - INFO - _internal - 136.244.116.133 - - [31/Jan/2025 23:10:55] "GET / HTTP/1.1" 200 -
+2025-02-01 00:10:28,986 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 00:10:28] "GET / HTTP/1.1" 200 -
+2025-02-01 00:10:34,978 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 00:10:34] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 00:10:35,041 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 00:10:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-01 02:07:54,960 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 02:07:54] "HEAD / HTTP/1.1" 200 -
+2025-02-01 02:07:55,823 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 02:07:55] "GET / HTTP/1.1" 200 -
+2025-02-01 02:20:07,148 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 02:20:07] "GET / HTTP/1.1" 200 -
+2025-02-01 02:20:07,350 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 02:20:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-01 02:20:07,543 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 02:20:07] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 02:20:08,162 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 02:20:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 02:20:13,766 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 02:20:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 03:09:13,640 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:09:13] "GET / HTTP/1.1" 200 -
+2025-02-01 03:09:22,206 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:09:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 03:09:54,948 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:09:54] "GET / HTTP/1.1" 200 -
+2025-02-01 03:49:50,237 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:49:50] "GET / HTTP/1.1" 200 -
+2025-02-01 03:52:16,686 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:52:16] "GET / HTTP/1.1" 200 -
+2025-02-01 03:52:16,689 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:52:16] "GET / HTTP/1.1" 200 -
+2025-02-01 03:52:39,142 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:52:39] "GET / HTTP/1.1" 200 -
+2025-02-01 03:55:28,538 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:55:28] "GET / HTTP/1.1" 200 -
+2025-02-01 03:55:28,721 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:55:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-01 03:55:28,909 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:55:28] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 03:55:29,111 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:55:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 03:55:29,673 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:55:29] "GET / HTTP/1.1" 200 -
+2025-02-01 03:55:30,092 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:55:30] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 03:55:30,094 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:55:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-01 03:55:30,809 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:55:30] "GET / HTTP/1.1" 200 -
+2025-02-01 03:55:31,414 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:55:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 03:55:38,494 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 03:55:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 04:18:43,894 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 04:18:43] "GET / HTTP/1.1" 200 -
+2025-02-01 04:18:44,284 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 04:18:44] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-01 04:18:44,643 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 04:18:44] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 04:18:51,998 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 04:18:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 04:19:23,473 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 04:19:23] "GET /files HTTP/1.1" 200 -
+2025-02-01 04:19:23,858 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 04:19:23] "GET /static/css/style_file.css HTTP/1.1" 200 -
+2025-02-01 04:19:24,150 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 04:19:24] "GET /static/js/script_file.js HTTP/1.1" 200 -
+2025-02-01 04:19:25,148 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 04:19:25] "GET /list_files HTTP/1.1" 200 -
+2025-02-01 04:19:25,462 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 04:19:25] "GET /file_size/29.01.2024_Jean_de_Bodinat_CEO_de_Rakam_AI.pdf HTTP/1.1" 200 -
+2025-02-01 04:19:35,818 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 04:19:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 07:35:23,335 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 07:35:23] "GET / HTTP/1.1" 200 -
+2025-02-01 07:35:24,181 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 07:35:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 07:52:04,123 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 07:52:04] "GET / HTTP/1.1" 200 -
+2025-02-01 07:52:04,443 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 07:52:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 07:52:05,064 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 07:52:05] "GET / HTTP/1.1" 200 -
+2025-02-01 07:52:08,511 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 07:52:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,070 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /_vti_pvt/administrators.pwd HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,071 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /.ssh/id_ed25519 HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,073 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /.ssh/id_rsa HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,075 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /secrets.json HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,077 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /.env HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,097 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /config.yml HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,100 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /database.sql HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,102 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /.svn/wc.db HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,103 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /.kube/config HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,105 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /_vti_pvt/service.pwd HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,106 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /.env.production HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,108 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /.aws/credentials HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,110 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /config.json HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,111 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /backup.zip HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,135 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /config.xml HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,136 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /config/database.php HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,138 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /etc/ssl/private/server.key HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,140 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /feed HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,142 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /web.config HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,144 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /config/production.json HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,145 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /.git/HEAD HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,161 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /.vscode/sftp.json HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,163 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /.ssh/id_ecdsa HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,165 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /backup.sql HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,167 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /user_secrets.yml HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,168 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /cloud-config.yml HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,170 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /dump.sql HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,171 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /config.php HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,173 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /_vti_pvt/authors.pwd HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,174 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /docker-compose.yml HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,176 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /backup.tar.gz HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,177 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /server-status HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,202 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /wp-admin/setup-config.php HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,204 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /api/.env HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,206 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "GET / HTTP/1.1" 200 -
+2025-02-01 08:07:52,207 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /phpinfo.php HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,209 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /etc/shadow HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,211 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /config.yaml HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,212 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /wp-config.php HTTP/1.1[0m" 404 -
+2025-02-01 08:07:52,389 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 08:07:52] "[33mGET /server.key HTTP/1.1[0m" 404 -
+2025-02-01 09:43:06,560 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 09:43:06] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+2025-02-01 09:43:08,333 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 09:43:08] "GET / HTTP/1.1" 200 -
+2025-02-01 10:14:20,474 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 10:14:20] "GET / HTTP/1.1" 200 -
+2025-02-01 10:14:22,043 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 10:14:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 13:28:20,430 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:28:20] "GET / HTTP/1.1" 200 -
+2025-02-01 13:28:20,563 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:28:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-01 13:28:20,700 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:28:20] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 13:28:20,865 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:28:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 13:28:24,817 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:28:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 13:30:40,242 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:30:40] "GET / HTTP/1.1" 200 -
+2025-02-01 13:38:16,626 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:38:16] "GET / HTTP/1.1" 200 -
+2025-02-01 13:42:52,870 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:42:52] "GET / HTTP/1.1" 200 -
+2025-02-01 13:42:53,051 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:42:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 13:42:53,184 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:42:53] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-01 13:45:15,300 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:45:15] "GET /?fbclid=IwZXh0bgNhZW0CMTEAAR24J3VuAYPow8hFjtimYaYucSoqOyFrpnB-VBFuIaYLRt4zPDRPy3ezRkU_aem_KGQK7T4hYl3B7LXkOpeZcA HTTP/1.1" 200 -
+2025-02-01 13:45:43,149 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:45:43] "GET / HTTP/1.1" 200 -
+2025-02-01 13:45:44,064 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 13:45:44] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 14:20:33,133 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 14:20:33] "GET / HTTP/1.1" 200 -
+2025-02-01 14:20:33,231 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 14:20:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 15:17:20,595 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 15:17:20] "GET / HTTP/1.1" 200 -
+2025-02-01 15:17:32,369 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 15:17:32] "GET / HTTP/1.1" 200 -
+2025-02-01 15:41:21,208 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 15:41:21] "GET / HTTP/1.1" 200 -
+2025-02-01 15:45:38,147 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 15:45:38] "GET / HTTP/1.1" 200 -
+2025-02-01 15:45:41,016 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 15:45:41] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 15:45:41,075 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 15:45:41] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-01 16:10:15,954 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 16:10:15] "GET / HTTP/1.1" 200 -
+2025-02-01 16:10:16,085 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 16:10:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-01 16:10:16,143 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 16:10:16] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 16:10:16,395 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 16:10:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 16:30:13,807 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 16:30:13] "GET / HTTP/1.1" 200 -
+2025-02-01 16:30:13,979 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 16:30:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 16:30:14,180 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 16:30:14] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-01 16:59:38,107 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 16:59:38] "GET / HTTP/1.1" 200 -
+2025-02-01 17:18:16,079 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 17:18:16] "GET / HTTP/1.1" 200 -
+2025-02-01 17:21:35,170 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 17:21:35] "GET / HTTP/1.1" 200 -
+2025-02-01 17:25:08,123 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 17:25:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 17:28:12,991 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 17:28:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 17:39:58,572 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 17:39:58] "GET / HTTP/1.1" 200 -
+2025-02-01 17:39:58,752 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 17:39:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 17:39:59,064 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 17:39:59] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-01 18:37:42,757 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 18:37:42] "GET / HTTP/1.1" 200 -
+2025-02-01 18:41:43,326 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 18:41:43] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+2025-02-01 18:41:44,358 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 18:41:44] "GET / HTTP/1.1" 200 -
+2025-02-01 19:42:44,384 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 19:42:44] "[33mGET /.git/config HTTP/1.1[0m" 404 -
+2025-02-01 21:41:19,438 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 21:41:19] "GET / HTTP/1.1" 200 -
+2025-02-01 21:41:19,607 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 21:41:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-01 21:41:20,014 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 21:41:20] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-01 22:05:19,404 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 22:05:19] "GET / HTTP/1.1" 200 -
+2025-02-01 22:05:19,609 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 22:05:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-01 22:05:19,825 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 22:05:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-01 22:05:20,045 - INFO - _internal - 136.244.116.133 - - [01/Feb/2025 22:05:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-02 00:25:06,599 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 00:25:06] "GET / HTTP/1.1" 200 -
+2025-02-02 00:25:06,839 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 00:25:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-02 00:25:07,080 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 00:25:07] "GET / HTTP/1.1" 200 -
+2025-02-02 00:25:07,320 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 00:25:07] "GET / HTTP/1.1" 200 -
+2025-02-02 00:25:08,203 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 00:25:08] "GET / HTTP/1.1" 200 -
+2025-02-02 00:25:08,445 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 00:25:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-02 00:25:08,683 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 00:25:08] "GET / HTTP/1.1" 200 -
+2025-02-02 00:25:08,921 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 00:25:08] "GET / HTTP/1.1" 200 -
+2025-02-02 01:26:28,959 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 01:26:28] "GET / HTTP/1.1" 200 -
+2025-02-02 01:26:32,942 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 01:26:32] "GET / HTTP/1.1" 200 -
+2025-02-02 01:26:34,488 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 01:26:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-02 01:26:35,544 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 01:26:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-02 01:26:38,535 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 01:26:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-02 01:26:39,158 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 01:26:39] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-02 01:26:39,290 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 01:26:39] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-02 01:26:39,415 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 01:26:39] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-02 01:28:36,622 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 01:28:36] "GET / HTTP/1.1" 200 -
+2025-02-02 02:07:00,723 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 02:07:00] "GET / HTTP/1.1" 200 -
+2025-02-02 04:11:01,802 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 04:11:01] "GET / HTTP/1.1" 200 -
+2025-02-02 04:16:29,257 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 04:16:29] "GET / HTTP/1.1" 200 -
+2025-02-02 08:18:32,973 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 08:18:32] "GET / HTTP/1.1" 200 -
+2025-02-02 08:54:28,006 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 08:54:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-02 12:36:47,292 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 12:36:47] "GET / HTTP/1.1" 200 -
+2025-02-02 13:10:33,066 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 13:10:33] "GET / HTTP/1.1" 200 -
+2025-02-02 13:43:38,729 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 13:43:38] "GET / HTTP/1.1" 200 -
+2025-02-02 13:43:39,106 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 13:43:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-02 13:43:39,306 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 13:43:39] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-02 14:34:00,926 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 14:34:00] "GET / HTTP/1.1" 200 -
+2025-02-02 15:02:01,559 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 15:02:01] "[33mGET /.env HTTP/1.1[0m" 404 -
+2025-02-02 15:02:06,896 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 15:02:06] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-02-02 15:35:20,387 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 15:35:20] "GET / HTTP/1.1" 200 -
+2025-02-02 15:35:29,163 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 15:35:29] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-02 16:06:00,210 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 16:06:00] "[33mGET /wp-admin/setup-config.php?step=1 HTTP/1.1[0m" 404 -
+2025-02-02 16:06:01,403 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 16:06:01] "[33mGET /wordpress/wp-admin/setup-config.php?step=1 HTTP/1.1[0m" 404 -
+2025-02-02 16:38:05,660 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 16:38:05] "GET / HTTP/1.1" 200 -
+2025-02-02 16:38:51,070 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 16:38:51] "[33mGET /cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js HTTP/1.1[0m" 404 -
+2025-02-02 16:38:51,081 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 16:38:51] "[33mGET /cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js HTTP/1.1[0m" 404 -
+2025-02-02 16:38:53,016 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 16:38:53] "[33mGET /cdn.jsdelivr.net/npm/marked/marked.min.js HTTP/1.1[0m" 404 -
+2025-02-02 16:38:53,080 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 16:38:53] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-02 16:38:55,040 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 16:38:55] "[33mGET /cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.5/purify.min.js HTTP/1.1[0m" 404 -
+2025-02-02 16:38:55,043 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 16:38:55] "[33mGET /cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js HTTP/1.1[0m" 404 -
+2025-02-02 17:16:28,766 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 17:16:28] "GET / HTTP/1.1" 200 -
+2025-02-02 19:02:51,641 - INFO - _internal - 136.244.116.133 - - [02/Feb/2025 19:02:51] "[33mGET /.env HTTP/1.1[0m" 404 -
+2025-02-03 00:20:12,187 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 00:20:12] "GET / HTTP/1.1" 200 -
+2025-02-03 00:20:12,429 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 00:20:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-03 00:20:12,678 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 00:20:12] "GET / HTTP/1.1" 200 -
+2025-02-03 00:20:12,932 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 00:20:12] "GET / HTTP/1.1" 200 -
+2025-02-03 00:20:13,176 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 00:20:13] "GET / HTTP/1.1" 200 -
+2025-02-03 00:20:14,143 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 00:20:14] "GET / HTTP/1.1" 200 -
+2025-02-03 00:20:14,403 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 00:20:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-03 00:20:14,662 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 00:20:14] "GET / HTTP/1.1" 200 -
+2025-02-03 00:20:14,920 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 00:20:14] "GET / HTTP/1.1" 200 -
+2025-02-03 10:45:41,882 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 10:45:41] "GET / HTTP/1.1" 200 -
+2025-02-03 10:45:43,370 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 10:45:43] "HEAD / HTTP/1.1" 200 -
+2025-02-03 10:45:44,104 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 10:45:44] "GET / HTTP/1.1" 200 -
+2025-02-03 10:45:45,289 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 10:45:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-03 10:45:45,495 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 10:45:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-03 10:45:45,712 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 10:45:45] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-03 10:45:45,838 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 10:45:45] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-03 13:09:29,261 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 13:09:29] "GET / HTTP/1.1" 200 -
+2025-02-03 13:58:18,996 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 13:58:18] "GET / HTTP/1.1" 200 -
+2025-02-03 13:58:19,571 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 13:58:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-03 13:58:19,861 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 13:58:19] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-03 15:56:47,656 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 15:56:47] "GET / HTTP/1.1" 200 -
+2025-02-03 15:56:48,056 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 15:56:48] "GET / HTTP/1.1" 200 -
+2025-02-03 15:56:48,123 - INFO - _internal - 136.244.116.133 - - [03/Feb/2025 15:56:48] "[33mGET /web HTTP/1.1[0m" 404 -
+2025-02-04 11:41:13,896 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:41:13] "GET / HTTP/1.1" 200 -
+2025-02-04 11:41:14,231 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:41:14] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-04 11:41:14,453 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:41:14] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-04 11:41:14,881 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:41:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 11:45:38,777 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:45:38] "GET /files HTTP/1.1" 200 -
+2025-02-04 11:45:39,126 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:45:39] "GET /static/css/style_file.css HTTP/1.1" 200 -
+2025-02-04 11:45:39,350 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:45:39] "GET /static/js/script_file.js HTTP/1.1" 200 -
+2025-02-04 11:45:39,594 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:45:39] "GET /list_files HTTP/1.1" 200 -
+2025-02-04 11:45:39,818 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:45:39] "GET /file_size/29.01.2024_Jean_de_Bodinat_CEO_de_Rakam_AI.pdf HTTP/1.1" 200 -
+2025-02-04 11:45:54,609 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:45:54] "GET / HTTP/1.1" 200 -
+2025-02-04 11:45:54,857 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:45:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 11:45:54,872 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:45:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-04 11:47:04,033 - INFO - app - Requête chat reçue
+2025-02-04 11:47:04,034 - INFO - app - Initialisation du vector store
+2025-02-04 11:47:07,253 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:47:07,253 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:47:10,956 - INFO - app - Vector store initialisé avec succès. Collection count: 5
+2025-02-04 11:47:10,981 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:47:10] "GET /chat?message=Hello+!+What+is+your+function+?&api_key=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&provider=openai&history=[{"role":"user","content":"Hello+!+What+is+your+function+?"}] HTTP/1.1" 200 -
+2025-02-04 11:47:13,330 - INFO - _client - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-04 11:47:46,376 - INFO - app - Requête chat reçue
+2025-02-04 11:47:46,376 - INFO - app - Initialisation du vector store
+2025-02-04 11:47:46,377 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:47:46,377 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:47:47,657 - INFO - app - Vector store initialisé avec succès. Collection count: 5
+2025-02-04 11:47:47,676 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:47:47] "GET /chat?message=What+is+the+document+in+your+memory+?&api_key=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&provider=openai&history=[{"role":"user","content":"Hello+!+What+is+your+function+?"},{"role":"assistant","content":"As+an+AI+assistant,+my+function+is+to+understand+and+process+language-based+queries,+provide+information,+perform+tasks,+and+make+recommendations+based+on+the+context+provided."},{"role":"user","content":"What+is+the+document+in+your+memory+?"}] HTTP/1.1" 200 -
+2025-02-04 11:47:49,025 - INFO - _client - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-04 11:48:53,362 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:48:53] "GET /files HTTP/1.1" 200 -
+2025-02-04 11:48:53,605 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:48:53] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-02-04 11:48:53,806 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:48:53] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-02-04 11:48:54,011 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:48:54] "GET /list_files HTTP/1.1" 200 -
+2025-02-04 11:48:54,231 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:48:54] "GET /file_size/29.01.2024_Jean_de_Bodinat_CEO_de_Rakam_AI.pdf HTTP/1.1" 200 -
+2025-02-04 11:48:56,190 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:48:56] "GET / HTTP/1.1" 200 -
+2025-02-04 11:48:56,451 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:48:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 11:48:56,464 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:48:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-04 11:49:01,875 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:49:01] "GET /files HTTP/1.1" 200 -
+2025-02-04 11:49:02,109 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:49:02] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-02-04 11:49:02,121 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:49:02] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-02-04 11:49:02,359 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:49:02] "GET /list_files HTTP/1.1" 200 -
+2025-02-04 11:49:02,583 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:49:02] "GET /file_size/29.01.2024_Jean_de_Bodinat_CEO_de_Rakam_AI.pdf HTTP/1.1" 200 -
+2025-02-04 11:52:44,338 - INFO - app - Fichier supprimé: 29.01.2024_Jean_de_Bodinat_CEO_de_Rakam_AI.pdf
+2025-02-04 11:52:44,339 - INFO - app - Ancien vector store supprimé
+2025-02-04 11:52:44,341 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:52:44,341 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:52:46,024 - INFO - app - Total de chunks générés: 0
+2025-02-04 11:52:46,024 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:52:46] "DELETE /delete/29.01.2024_Jean_de_Bodinat_CEO_de_Rakam_AI.pdf HTTP/1.1" 200 -
+2025-02-04 11:52:49,620 - INFO - app - Traitement du fichier: Beyond Birds and Bees - Rough, Bonnie J._.pdf
+2025-02-04 11:52:49,621 - INFO - app - -> Fichier valide: Beyond Birds and Bees - Rough, Bonnie J._.pdf
+2025-02-04 11:52:49,628 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:52:49,628 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:52:50,715 - INFO - app - Traitement du fichier: Raising An Emotionally Intelligent Child The Heart of Parenting ( PDFDrive ).pdf
+2025-02-04 11:52:50,715 - INFO - app - -> Fichier valide: Raising An Emotionally Intelligent Child The Heart of Parenting ( PDFDrive ).pdf
+2025-02-04 11:52:50,722 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:52:50,722 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:52:50,865 - INFO - app - Traitement du fichier: How to Talk So Kids Will Listen & Listen So Kids Will Talk ( PDFDrive ).pdf
+2025-02-04 11:52:50,865 - INFO - app - -> Fichier valide: How to Talk So Kids Will Listen & Listen So Kids Will Talk ( PDFDrive ).pdf
+2025-02-04 11:52:50,893 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:52:50,893 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:52:50,945 - ERROR - app - Erreur de traitement de How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf: EOF marker not found
+2025-02-04 11:52:52,667 - INFO - app - Traitement du fichier: Parenting with Love and Logic - Foster Cline.pdf
+2025-02-04 11:52:52,673 - INFO - app - -> Fichier valide: Parenting with Love and Logic - Foster Cline.pdf
+2025-02-04 11:52:53,318 - INFO - app - Traitement du fichier: Parent Effectiveness Training_ - Dr. Thomas Gordon Nobel Peace P.pdf
+2025-02-04 11:52:53,327 - INFO - app - -> Fichier valide: Parent Effectiveness Training_ - Dr. Thomas Gordon Nobel Peace P.pdf
+2025-02-04 11:52:53,590 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:52:53,590 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:52:55,513 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:52:55,514 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:53:02,410 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 11:53:21,787 - INFO - app - Traitement du fichier: It_s So Amazing!. A Book About Eggs, Sperm, Birth, Babies, and Families ( PDFDrive ).pdf
+2025-02-04 11:53:21,787 - INFO - app - -> Fichier valide: It_s So Amazing!. A Book About Eggs, Sperm, Birth, Babies, and Families ( PDFDrive ).pdf
+2025-02-04 11:54:05,062 - INFO - app - Fichier How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf découpé en 619 chunks
+2025-02-04 11:54:11,909 - INFO - app - Fichier How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf découpé en 619 chunks
+2025-02-04 11:54:21,116 - INFO - app - Fichier How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf découpé en 619 chunks
+2025-02-04 11:54:22,757 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:54:22,757 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:54:22,922 - INFO - app - Traitement du fichier: The Social Skills Guidebook_ Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are ( PDFDrive ).pdf
+2025-02-04 11:54:22,950 - INFO - app - -> Fichier valide: The Social Skills Guidebook_ Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are ( PDFDrive ).pdf
+2025-02-04 11:54:24,679 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:54:24,682 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:54:25,675 - INFO - app - Fichier How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf découpé en 619 chunks
+2025-02-04 11:54:26,114 - INFO - app - Traitement du fichier: Siblings Without Rivalry - Adele Faber.pdf
+2025-02-04 11:54:26,114 - INFO - app - -> Fichier valide: Siblings Without Rivalry - Adele Faber.pdf
+2025-02-04 11:54:26,131 - INFO - app - Traitement du fichier: The Whole-Brain Child_ 12 Revolutionary Strategies to Nurture Your Child_s Developing Mind ( PDFDrive ).pdf
+2025-02-04 11:54:26,131 - INFO - app - -> Fichier valide: The Whole-Brain Child_ 12 Revolutionary Strategies to Nurture Your Child_s Developing Mind ( PDFDrive ).pdf
+2025-02-04 11:54:28,885 - INFO - app - Traitement du fichier: The wonder weeks _ how to stimulate your baby_s mental development and help him turn his 10 predictable, great, fussy phases into magical leaps forward ( PDFDrive ).pdf
+2025-02-04 11:54:28,886 - INFO - app - -> Fichier valide: The wonder weeks _ how to stimulate your baby_s mental development and help him turn his 10 predictable, great, fussy phases into magical leaps forward ( PDFDrive ).pdf
+2025-02-04 11:54:30,785 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 11:54:30,785 - INFO - app - Total de chunks générés: 1833
+2025-02-04 11:54:30,797 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 11:54:30,820 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:54:30] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 11:54:31,244 - INFO - app - Traitement du fichier: What_s Going on in There_ - Lise Eliot.pdf
+2025-02-04 11:54:31,249 - INFO - app - -> Fichier valide: What_s Going on in There_ - Lise Eliot.pdf
+2025-02-04 11:54:32,576 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:54:32,577 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:54:33,221 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:54:33,227 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:54:38,102 - INFO - app - Fichier Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf découpé en 677 chunks
+2025-02-04 11:54:38,371 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:54:38,371 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:54:39,436 - INFO - SentenceTransformer - Use pytorch device_name: cpu
+2025-02-04 11:54:39,436 - INFO - SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-02-04 11:54:46,858 - INFO - app - Fichier Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf découpé en 677 chunks
+2025-02-04 11:54:58,793 - INFO - app - Fichier Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf découpé en 677 chunks
+2025-02-04 11:55:06,950 - INFO - app - Fichier Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf découpé en 677 chunks
+2025-02-04 11:55:58,543 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:55:58] "GET /list_files HTTP/1.1" 200 -
+2025-02-04 11:55:58,906 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:55:58] "GET /file_size/The_Social_Skills_Guidebook__Manage_Shyness_Improve_Your_Conversations_and_Make_Friends_Without_Giving_Up_Who_You_Are__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:55:59,000 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:55:59] "GET /file_size/How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:55:59,227 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:55:59] "GET /file_size/Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf HTTP/1.1" 200 -
+2025-02-04 11:55:59,249 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:55:59] "GET /file_size/Parenting_with_Love_and_Logic_-_Foster_Cline.pdf HTTP/1.1" 200 -
+2025-02-04 11:55:59,332 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:55:59] "GET /file_size/It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:55:59,874 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:55:59] "GET /file_size/What_s_Going_on_in_There__-_Lise_Eliot.pdf HTTP/1.1" 200 -
+2025-02-04 11:55:59,876 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:55:59] "GET /file_size/Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf HTTP/1.1" 200 -
+2025-02-04 11:55:59,892 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:55:59] "GET /file_size/The_wonder_weeks___how_to_stimulate_your_baby_s_mental_development_and_help_him_turn_his_10_predictable_great_fussy_phases_into_magical_leaps_forward__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:56:00,037 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:56:00] "GET /file_size/Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:56:00,189 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:56:00] "GET /file_size/Siblings_Without_Rivalry_-_Adele_Faber.pdf HTTP/1.1" 200 -
+2025-02-04 11:56:00,413 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:56:00] "GET /file_size/The_Whole-Brain_Child__12_Revolutionary_Strategies_to_Nurture_Your_Child_s_Developing_Mind__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:56:10,213 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:56:10] "GET / HTTP/1.1" 200 -
+2025-02-04 11:56:11,103 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:56:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 11:56:11,637 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:56:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-04 11:56:59,820 - INFO - app - Requête chat reçue
+2025-02-04 11:56:59,821 - INFO - app - Initialisation du vector store
+2025-02-04 11:56:59,826 - WARNING - app - Le dossier de persistance n'existe pas ou est vide
+2025-02-04 11:56:59,831 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:56:59] "GET /chat?message=Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.&api_key=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&provider=openai&history=[{"role":"user","content":"Hello+!+What+is+your+function+?"},{"role":"assistant","content":"As+an+AI+assistant,+my+function+is+to+understand+and+process+language-based+queries,+provide+information,+perform+tasks,+and+make+recommendations+based+on+the+context+provided."},{"role":"user","content":"What+is+the+document+in+your+memory+?"},{"role":"assistant","content":"The+document+in+my+memory+appears+to+be+pieces+of+mixed+information+related+to+Artificial+Intelligence+and+technology.+There+are+several+components+mentioned:\\n\\n1.+Models+such+as+GPT-4+and+GPT+4-mini+and+vectorization+methods+are+used+in+multiple+processes.+Also,+there's+mention+of+an+'LLM'+though+the+context+doesn't+clarify+what+LLM+stands+for.\\n2.+There's+information+about+contractual+and+financial+details.+Apparently,+subcontractors+are+contracted,+and+there+is+a+ceiling+budget+of+300€+per+month+for+LLM+costs.\\n3.+The+document+discusses+various+levels+of+cloud+providers,+mentioning+OVH,+Scaleway,+and+GCP+and+implicitly+referring+to+data+sovereignty+considerations.\\n4.+There+is+talk+of+evaluation+and+testing+methods,+including+A/B+testing,+vector-based+comparison,+query+testing,+and+more.+It+indicates+utilization+of+an+observability+tool+like+'phospho'+in+production.+The+concept+of+LLM+as+a+judge+is+also+mentioned.\\n5.+Multimodality+and+the+need+for+rapid+iteration+are+outlined.\\n6.+They+mention+some+challenges+in+the+sequential+applications+and+language+evaluation.\\n7.+There+are+references+to+a+company+Rakam+AI+and+its+CEO,+Jean+de+Bodinat.\\n8.+Some+potential+issues+related+to+data+authorization+and+health+software+are+alluded+to.\\n\\nPlease+note+that+the+information+is+fragmented,+which+might+make+the+understanding+a+bit+complex,+and+the+interpretation+might+not+be+100%25+accurate."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte."}] HTTP/1.1" 200 -
+2025-02-04 11:57:00,678 - INFO - app - Fichier How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf découpé en 619 chunks
+2025-02-04 11:57:02,632 - INFO - _client - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-04 11:57:09,935 - INFO - app - Fichier How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf découpé en 619 chunks
+2025-02-04 11:57:15,834 - INFO - app - Fichier Parenting_with_Love_and_Logic_-_Foster_Cline.pdf découpé en 573 chunks
+2025-02-04 11:57:25,903 - INFO - app - Fichier Parenting_with_Love_and_Logic_-_Foster_Cline.pdf découpé en 573 chunks
+2025-02-04 11:57:26,020 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:26] "GET /files HTTP/1.1" 200 -
+2025-02-04 11:57:26,351 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:26] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-02-04 11:57:26,379 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:26] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-02-04 11:57:27,436 - INFO - app - Fichier How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf découpé en 619 chunks
+2025-02-04 11:57:27,517 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:27] "GET /list_files HTTP/1.1" 200 -
+2025-02-04 11:57:27,802 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:27] "GET /file_size/The_Social_Skills_Guidebook__Manage_Shyness_Improve_Your_Conversations_and_Make_Friends_Without_Giving_Up_Who_You_Are__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:27,970 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:27] "GET /file_size/It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:28,264 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:28] "GET /file_size/Parenting_with_Love_and_Logic_-_Foster_Cline.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:28,401 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:28] "GET /file_size/Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:28,428 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:28] "GET /file_size/How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:28,616 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:28] "GET /file_size/What_s_Going_on_in_There__-_Lise_Eliot.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:28,660 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:28] "GET /file_size/The_wonder_weeks___how_to_stimulate_your_baby_s_mental_development_and_help_him_turn_his_10_predictable_great_fussy_phases_into_magical_leaps_forward__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:28,758 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:28] "GET /file_size/Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:28,790 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:28] "GET /file_size/Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:29,041 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:29] "GET /file_size/The_Whole-Brain_Child__12_Revolutionary_Strategies_to_Nurture_Your_Child_s_Developing_Mind__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:29,042 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:29] "GET /file_size/Siblings_Without_Rivalry_-_Adele_Faber.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:34,094 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:34] "GET / HTTP/1.1" 200 -
+2025-02-04 11:57:34,776 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-04 11:57:34,857 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 11:57:36,052 - INFO - app - Fichier How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf découpé en 619 chunks
+2025-02-04 11:57:42,180 - INFO - app - Requête chat reçue
+2025-02-04 11:57:42,189 - INFO - app - Initialisation du vector store
+2025-02-04 11:57:42,491 - WARNING - app - Le dossier de persistance n'existe pas ou est vide
+2025-02-04 11:57:42,492 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:42] "GET /chat?message=Quels+sont+les+documents+dans+ta+mémoire+?&api_key=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&provider=openai&history=[{"role":"user","content":"Hello+!+What+is+your+function+?"},{"role":"assistant","content":"As+an+AI+assistant,+my+function+is+to+understand+and+process+language-based+queries,+provide+information,+perform+tasks,+and+make+recommendations+based+on+the+context+provided."},{"role":"user","content":"What+is+the+document+in+your+memory+?"},{"role":"assistant","content":"The+document+in+my+memory+appears+to+be+pieces+of+mixed+information+related+to+Artificial+Intelligence+and+technology.+There+are+several+components+mentioned:\\n\\n1.+Models+such+as+GPT-4+and+GPT+4-mini+and+vectorization+methods+are+used+in+multiple+processes.+Also,+there's+mention+of+an+'LLM'+though+the+context+doesn't+clarify+what+LLM+stands+for.\\n2.+There's+information+about+contractual+and+financial+details.+Apparently,+subcontractors+are+contracted,+and+there+is+a+ceiling+budget+of+300€+per+month+for+LLM+costs.\\n3.+The+document+discusses+various+levels+of+cloud+providers,+mentioning+OVH,+Scaleway,+and+GCP+and+implicitly+referring+to+data+sovereignty+considerations.\\n4.+There+is+talk+of+evaluation+and+testing+methods,+including+A/B+testing,+vector-based+comparison,+query+testing,+and+more.+It+indicates+utilization+of+an+observability+tool+like+'phospho'+in+production.+The+concept+of+LLM+as+a+judge+is+also+mentioned.\\n5.+Multimodality+and+the+need+for+rapid+iteration+are+outlined.\\n6.+They+mention+some+challenges+in+the+sequential+applications+and+language+evaluation.\\n7.+There+are+references+to+a+company+Rakam+AI+and+its+CEO,+Jean+de+Bodinat.\\n8.+Some+potential+issues+related+to+data+authorization+and+health+software+are+alluded+to.\\n\\nPlease+note+that+the+information+is+fragmented,+which+might+make+the+understanding+a+bit+complex,+and+the+interpretation+might+not+be+100%25+accurate."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte."},{"role":"assistant","content":"1.+Restez+calme+et+patient.\\n2.+Faites+preuve+de+compréhension+et+d'empathie.\\n3.+Ignorez+le+comportement+inapproprié+lorsque+cela+est+sécuritaire.\\n4.+Aidez+votre+enfant+à+exprimer+ses+sentiments.\\n5.+Renforcez+le+comportement+positif."},{"role":"user","content":"Quels+sont+les+documents+dans+ta+mémoire+?"}] HTTP/1.1" 200 -
+2025-02-04 11:57:43,684 - INFO - app - Fichier How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf découpé en 619 chunks
+2025-02-04 11:57:45,908 - INFO - _client - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-04 11:57:50,932 - INFO - app - Fichier How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf découpé en 619 chunks
+2025-02-04 11:57:53,057 - INFO - app - Fichier Parenting_with_Love_and_Logic_-_Foster_Cline.pdf découpé en 573 chunks
+2025-02-04 11:57:56,983 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:56] "GET /files HTTP/1.1" 200 -
+2025-02-04 11:57:57,281 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:57] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
+2025-02-04 11:57:57,422 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:57] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
+2025-02-04 11:57:57,994 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:57] "GET /list_files HTTP/1.1" 200 -
+2025-02-04 11:57:58,274 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:58] "GET /file_size/The_Social_Skills_Guidebook__Manage_Shyness_Improve_Your_Conversations_and_Make_Friends_Without_Giving_Up_Who_You_Are__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:58,313 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:58] "GET /file_size/It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:58,414 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:58] "GET /file_size/What_s_Going_on_in_There__-_Lise_Eliot.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:58,504 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:58] "GET /file_size/Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:58,598 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:58] "GET /file_size/Parenting_with_Love_and_Logic_-_Foster_Cline.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:58,772 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:58] "GET /file_size/How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:58,851 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:58] "GET /file_size/The_wonder_weeks___how_to_stimulate_your_baby_s_mental_development_and_help_him_turn_his_10_predictable_great_fussy_phases_into_magical_leaps_forward__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:58,998 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:58] "GET /file_size/Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:59,522 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:59] "GET /file_size/Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:59,830 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:59] "GET /file_size/Siblings_Without_Rivalry_-_Adele_Faber.pdf HTTP/1.1" 200 -
+2025-02-04 11:57:59,843 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:57:59] "GET /file_size/The_Whole-Brain_Child__12_Revolutionary_Strategies_to_Nurture_Your_Child_s_Developing_Mind__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 11:58:01,026 - INFO - app - Fichier Parenting_with_Love_and_Logic_-_Foster_Cline.pdf découpé en 573 chunks
+2025-02-04 11:58:05,504 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:58:05] "GET / HTTP/1.1" 200 -
+2025-02-04 11:58:06,355 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:58:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 11:58:06,450 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:58:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-04 11:58:17,373 - INFO - app - Requête chat reçue
+2025-02-04 11:58:17,373 - INFO - app - Initialisation du vector store
+2025-02-04 11:58:17,373 - WARNING - app - Le dossier de persistance n'existe pas ou est vide
+2025-02-04 11:58:17,374 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:58:17] "GET /chat?message=Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.&api_key=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&provider=openai&history=[{"role":"user","content":"Hello+!+What+is+your+function+?"},{"role":"assistant","content":"As+an+AI+assistant,+my+function+is+to+understand+and+process+language-based+queries,+provide+information,+perform+tasks,+and+make+recommendations+based+on+the+context+provided."},{"role":"user","content":"What+is+the+document+in+your+memory+?"},{"role":"assistant","content":"The+document+in+my+memory+appears+to+be+pieces+of+mixed+information+related+to+Artificial+Intelligence+and+technology.+There+are+several+components+mentioned:\\n\\n1.+Models+such+as+GPT-4+and+GPT+4-mini+and+vectorization+methods+are+used+in+multiple+processes.+Also,+there's+mention+of+an+'LLM'+though+the+context+doesn't+clarify+what+LLM+stands+for.\\n2.+There's+information+about+contractual+and+financial+details.+Apparently,+subcontractors+are+contracted,+and+there+is+a+ceiling+budget+of+300€+per+month+for+LLM+costs.\\n3.+The+document+discusses+various+levels+of+cloud+providers,+mentioning+OVH,+Scaleway,+and+GCP+and+implicitly+referring+to+data+sovereignty+considerations.\\n4.+There+is+talk+of+evaluation+and+testing+methods,+including+A/B+testing,+vector-based+comparison,+query+testing,+and+more.+It+indicates+utilization+of+an+observability+tool+like+'phospho'+in+production.+The+concept+of+LLM+as+a+judge+is+also+mentioned.\\n5.+Multimodality+and+the+need+for+rapid+iteration+are+outlined.\\n6.+They+mention+some+challenges+in+the+sequential+applications+and+language+evaluation.\\n7.+There+are+references+to+a+company+Rakam+AI+and+its+CEO,+Jean+de+Bodinat.\\n8.+Some+potential+issues+related+to+data+authorization+and+health+software+are+alluded+to.\\n\\nPlease+note+that+the+information+is+fragmented,+which+might+make+the+understanding+a+bit+complex,+and+the+interpretation+might+not+be+100%25+accurate."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte."},{"role":"assistant","content":"1.+Restez+calme+et+patient.\\n2.+Faites+preuve+de+compréhension+et+d'empathie.\\n3.+Ignorez+le+comportement+inapproprié+lorsque+cela+est+sécuritaire.\\n4.+Aidez+votre+enfant+à+exprimer+ses+sentiments.\\n5.+Renforcez+le+comportement+positif."},{"role":"user","content":"Quels+sont+les+documents+dans+ta+mémoire+?"},{"role":"assistant","content":"Je+suis+désolé,+il+semble+y+avoir+une+malentendu.+En+tant+qu'assistant+AI,+je+ne+stocke+pas+de+documents+dans+ma+mémoire.+J'ai+accès+à+une+vaste+quantité+d'informations+et+de+connaissances,+mais+je+ne+garde+pas+de+documents+ou+de+fichiers+spécifiques.+Cependant,+je+peux+me+souvenir+des+informations+de+nos+conversations+précédentes+pour+maintenir+une+conversation+cohérente."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte."}] HTTP/1.1" 200 -
+2025-02-04 11:58:19,942 - INFO - _client - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-04 11:58:22,477 - INFO - app - Fichier Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf découpé en 677 chunks
+2025-02-04 11:58:31,921 - INFO - app - Fichier Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf découpé en 677 chunks
+2025-02-04 11:58:47,969 - INFO - app - Fichier Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf découpé en 677 chunks
+2025-02-04 11:58:53,605 - INFO - app - Requête chat reçue
+2025-02-04 11:58:53,652 - INFO - app - Initialisation du vector store
+2025-02-04 11:58:53,653 - WARNING - app - Le dossier de persistance n'existe pas ou est vide
+2025-02-04 11:58:53,654 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 11:58:53] "GET /chat?message=Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.+Répond+à+l'aide+des+documents+dans+ta+mémoire.&api_key=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&provider=openai&history=[{"role":"user","content":"Hello+!+What+is+your+function+?"},{"role":"assistant","content":"As+an+AI+assistant,+my+function+is+to+understand+and+process+language-based+queries,+provide+information,+perform+tasks,+and+make+recommendations+based+on+the+context+provided."},{"role":"user","content":"What+is+the+document+in+your+memory+?"},{"role":"assistant","content":"The+document+in+my+memory+appears+to+be+pieces+of+mixed+information+related+to+Artificial+Intelligence+and+technology.+There+are+several+components+mentioned:\\n\\n1.+Models+such+as+GPT-4+and+GPT+4-mini+and+vectorization+methods+are+used+in+multiple+processes.+Also,+there's+mention+of+an+'LLM'+though+the+context+doesn't+clarify+what+LLM+stands+for.\\n2.+There's+information+about+contractual+and+financial+details.+Apparently,+subcontractors+are+contracted,+and+there+is+a+ceiling+budget+of+300€+per+month+for+LLM+costs.\\n3.+The+document+discusses+various+levels+of+cloud+providers,+mentioning+OVH,+Scaleway,+and+GCP+and+implicitly+referring+to+data+sovereignty+considerations.\\n4.+There+is+talk+of+evaluation+and+testing+methods,+including+A/B+testing,+vector-based+comparison,+query+testing,+and+more.+It+indicates+utilization+of+an+observability+tool+like+'phospho'+in+production.+The+concept+of+LLM+as+a+judge+is+also+mentioned.\\n5.+Multimodality+and+the+need+for+rapid+iteration+are+outlined.\\n6.+They+mention+some+challenges+in+the+sequential+applications+and+language+evaluation.\\n7.+There+are+references+to+a+company+Rakam+AI+and+its+CEO,+Jean+de+Bodinat.\\n8.+Some+potential+issues+related+to+data+authorization+and+health+software+are+alluded+to.\\n\\nPlease+note+that+the+information+is+fragmented,+which+might+make+the+understanding+a+bit+complex,+and+the+interpretation+might+not+be+100%25+accurate."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte."},{"role":"assistant","content":"1.+Restez+calme+et+patient.\\n2.+Faites+preuve+de+compréhension+et+d'empathie.\\n3.+Ignorez+le+comportement+inapproprié+lorsque+cela+est+sécuritaire.\\n4.+Aidez+votre+enfant+à+exprimer+ses+sentiments.\\n5.+Renforcez+le+comportement+positif."},{"role":"user","content":"Quels+sont+les+documents+dans+ta+mémoire+?"},{"role":"assistant","content":"Je+suis+désolé,+il+semble+y+avoir+une+malentendu.+En+tant+qu'assistant+AI,+je+ne+stocke+pas+de+documents+dans+ma+mémoire.+J'ai+accès+à+une+vaste+quantité+d'informations+et+de+connaissances,+mais+je+ne+garde+pas+de+documents+ou+de+fichiers+spécifiques.+Cependant,+je+peux+me+souvenir+des+informations+de+nos+conversations+précédentes+pour+maintenir+une+conversation+cohérente."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte."},{"role":"assistant","content":"1.+Restez+calme+et+patient.\\n2.+Faites+preuve+de+compréhension+et+d'empathie.\\n3.+Ignorez+le+comportement+inapproprié+lorsque+cela+est+sécuritaire.\\n4.+Aidez+votre+enfant+à+exprimer+ses+sentiments.\\n5.+Renforcez+le+comportement+positif."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.+Répond+à+l'aide+des+documents+dans+ta+mémoire."}] HTTP/1.1" 200 -
+2025-02-04 11:58:54,997 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 11:58:56,032 - INFO - _client - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-04 11:58:56,881 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 11:58:58,521 - INFO - app - Fichier Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf découpé en 677 chunks
+2025-02-04 11:58:59,231 - INFO - app - Fichier Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf découpé en 677 chunks
+2025-02-04 11:59:11,513 - INFO - app - Fichier Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf découpé en 677 chunks
+2025-02-04 11:59:35,706 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 11:59:45,726 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 12:01:19,103 - INFO - app - Fichier Parenting_with_Love_and_Logic_-_Foster_Cline.pdf découpé en 573 chunks
+2025-02-04 12:01:37,865 - INFO - app - Fichier Parenting_with_Love_and_Logic_-_Foster_Cline.pdf découpé en 573 chunks
+2025-02-04 12:01:58,171 - INFO - app - Fichier Parenting_with_Love_and_Logic_-_Foster_Cline.pdf découpé en 573 chunks
+2025-02-04 12:02:01,244 - INFO - app - Fichier Parenting_with_Love_and_Logic_-_Foster_Cline.pdf découpé en 573 chunks
+2025-02-04 12:02:01,631 - INFO - app - Fichier Parenting_with_Love_and_Logic_-_Foster_Cline.pdf découpé en 573 chunks
+2025-02-04 12:02:10,417 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 12:02:10,417 - INFO - app - Total de chunks générés: 3702
+2025-02-04 12:02:10,549 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 12:02:10,565 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:02:10] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 12:02:11,516 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 12:02:11,531 - INFO - app - Total de chunks générés: 3702
+2025-02-04 12:02:11,612 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 12:02:11,742 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:02:11] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 12:02:12,957 - INFO - app - Fichier Parenting_with_Love_and_Logic_-_Foster_Cline.pdf découpé en 573 chunks
+2025-02-04 12:02:44,061 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 12:02:44,061 - INFO - app - Total de chunks générés: 3702
+2025-02-04 12:02:44,063 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 12:02:44,075 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:02:44] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 12:02:46,068 - INFO - app - Fichier The_Social_Skills_Guidebook__Manage_Shyness_Improve_Your_Conversations_and_Make_Friends_Without_Giving_Up_Who_You_Are__PDFDrive_.pdf découpé en 530 chunks
+2025-02-04 12:02:53,698 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 12:02:53,699 - INFO - app - Total de chunks générés: 3702
+2025-02-04 12:02:53,706 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 12:02:53,717 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:02:53] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 12:02:57,195 - INFO - app - Fichier The_Social_Skills_Guidebook__Manage_Shyness_Improve_Your_Conversations_and_Make_Friends_Without_Giving_Up_Who_You_Are__PDFDrive_.pdf découpé en 530 chunks
+2025-02-04 12:03:05,770 - INFO - app - Fichier The_Social_Skills_Guidebook__Manage_Shyness_Improve_Your_Conversations_and_Make_Friends_Without_Giving_Up_Who_You_Are__PDFDrive_.pdf découpé en 530 chunks
+2025-02-04 12:03:07,261 - INFO - app - Fichier The_Social_Skills_Guidebook__Manage_Shyness_Improve_Your_Conversations_and_Make_Friends_Without_Giving_Up_Who_You_Are__PDFDrive_.pdf découpé en 530 chunks
+2025-02-04 12:03:08,579 - INFO - app - Fichier It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf découpé en 163 chunks
+2025-02-04 12:03:09,061 - INFO - app - Fichier The_Social_Skills_Guidebook__Manage_Shyness_Improve_Your_Conversations_and_Make_Friends_Without_Giving_Up_Who_You_Are__PDFDrive_.pdf découpé en 530 chunks
+2025-02-04 12:03:13,011 - INFO - app - Fichier The_Social_Skills_Guidebook__Manage_Shyness_Improve_Your_Conversations_and_Make_Friends_Without_Giving_Up_Who_You_Are__PDFDrive_.pdf découpé en 530 chunks
+2025-02-04 12:03:15,386 - INFO - app - Fichier It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf découpé en 163 chunks
+2025-02-04 12:03:23,742 - INFO - app - Fichier It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf découpé en 163 chunks
+2025-02-04 12:03:25,367 - INFO - app - Fichier It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf découpé en 163 chunks
+2025-02-04 12:03:27,446 - INFO - app - Fichier It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf découpé en 163 chunks
+2025-02-04 12:03:33,650 - INFO - app - Fichier It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf découpé en 163 chunks
+2025-02-04 12:05:07,287 - INFO - app - Fichier What_s_Going_on_in_There__-_Lise_Eliot.pdf découpé en 1500 chunks
+2025-02-04 12:05:14,114 - INFO - app - Fichier What_s_Going_on_in_There__-_Lise_Eliot.pdf découpé en 1500 chunks
+2025-02-04 12:05:17,009 - INFO - app - Fichier What_s_Going_on_in_There__-_Lise_Eliot.pdf découpé en 1500 chunks
+2025-02-04 12:05:20,013 - INFO - app - Fichier What_s_Going_on_in_There__-_Lise_Eliot.pdf découpé en 1500 chunks
+2025-02-04 12:05:22,225 - INFO - app - Fichier What_s_Going_on_in_There__-_Lise_Eliot.pdf découpé en 1500 chunks
+2025-02-04 12:05:28,536 - INFO - app - Fichier What_s_Going_on_in_There__-_Lise_Eliot.pdf découpé en 1500 chunks
+2025-02-04 12:08:02,112 - INFO - app - Fichier The_wonder_weeks___how_to_stimulate_your_baby_s_mental_development_and_help_him_turn_his_10_predictable_great_fussy_phases_into_magical_leaps_forward__PDFDrive_.pdf découpé en 1547 chunks
+2025-02-04 12:08:12,339 - INFO - app - Fichier The_wonder_weeks___how_to_stimulate_your_baby_s_mental_development_and_help_him_turn_his_10_predictable_great_fussy_phases_into_magical_leaps_forward__PDFDrive_.pdf découpé en 1547 chunks
+2025-02-04 12:08:16,964 - INFO - app - Fichier The_wonder_weeks___how_to_stimulate_your_baby_s_mental_development_and_help_him_turn_his_10_predictable_great_fussy_phases_into_magical_leaps_forward__PDFDrive_.pdf découpé en 1547 chunks
+2025-02-04 12:08:17,374 - INFO - app - Fichier The_wonder_weeks___how_to_stimulate_your_baby_s_mental_development_and_help_him_turn_his_10_predictable_great_fussy_phases_into_magical_leaps_forward__PDFDrive_.pdf découpé en 1547 chunks
+2025-02-04 12:08:23,493 - INFO - app - Fichier The_wonder_weeks___how_to_stimulate_your_baby_s_mental_development_and_help_him_turn_his_10_predictable_great_fussy_phases_into_magical_leaps_forward__PDFDrive_.pdf découpé en 1547 chunks
+2025-02-04 12:08:29,445 - INFO - app - Fichier The_wonder_weeks___how_to_stimulate_your_baby_s_mental_development_and_help_him_turn_his_10_predictable_great_fussy_phases_into_magical_leaps_forward__PDFDrive_.pdf découpé en 1547 chunks
+2025-02-04 12:08:46,625 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 12:09:00,951 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 12:09:11,268 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 12:09:11,708 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 12:09:20,214 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 12:09:32,263 - INFO - app - Fichier Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf découpé en 832 chunks
+2025-02-04 12:10:41,881 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 12:10:57,562 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 12:11:05,141 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 12:11:07,226 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 12:11:09,054 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 12:11:09,130 - INFO - app - Fichier Siblings_Without_Rivalry_-_Adele_Faber.pdf découpé en 461 chunks
+2025-02-04 12:11:17,163 - INFO - app - Fichier Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf découpé en 1001 chunks
+2025-02-04 12:11:22,561 - INFO - app - Fichier Siblings_Without_Rivalry_-_Adele_Faber.pdf découpé en 461 chunks
+2025-02-04 12:11:32,317 - INFO - app - Fichier Siblings_Without_Rivalry_-_Adele_Faber.pdf découpé en 461 chunks
+2025-02-04 12:11:36,876 - INFO - app - Fichier Siblings_Without_Rivalry_-_Adele_Faber.pdf découpé en 461 chunks
+2025-02-04 12:11:41,122 - INFO - app - Fichier Siblings_Without_Rivalry_-_Adele_Faber.pdf découpé en 461 chunks
+2025-02-04 12:11:51,971 - INFO - app - Fichier Siblings_Without_Rivalry_-_Adele_Faber.pdf découpé en 461 chunks
+2025-02-04 12:12:22,050 - INFO - app - Fichier The_Whole-Brain_Child__12_Revolutionary_Strategies_to_Nurture_Your_Child_s_Developing_Mind__PDFDrive_.pdf découpé en 650 chunks
+2025-02-04 12:12:22,050 - INFO - app - Total de chunks générés: 8553
+2025-02-04 12:12:22,151 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 12:12:22,218 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:12:22] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 12:12:37,080 - INFO - app - Fichier The_Whole-Brain_Child__12_Revolutionary_Strategies_to_Nurture_Your_Child_s_Developing_Mind__PDFDrive_.pdf découpé en 650 chunks
+2025-02-04 12:12:37,080 - INFO - app - Total de chunks générés: 8553
+2025-02-04 12:12:37,087 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 12:12:37,095 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:12:37] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 12:12:42,029 - INFO - app - Fichier The_Whole-Brain_Child__12_Revolutionary_Strategies_to_Nurture_Your_Child_s_Developing_Mind__PDFDrive_.pdf découpé en 650 chunks
+2025-02-04 12:12:42,029 - INFO - app - Total de chunks générés: 8553
+2025-02-04 12:12:42,035 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 12:12:42,053 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:12:42] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 12:12:43,029 - INFO - app - Fichier The_Whole-Brain_Child__12_Revolutionary_Strategies_to_Nurture_Your_Child_s_Developing_Mind__PDFDrive_.pdf découpé en 650 chunks
+2025-02-04 12:12:43,029 - INFO - app - Total de chunks générés: 8553
+2025-02-04 12:12:43,031 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 12:12:43,035 - INFO - app - Fichier The_Whole-Brain_Child__12_Revolutionary_Strategies_to_Nurture_Your_Child_s_Developing_Mind__PDFDrive_.pdf découpé en 650 chunks
+2025-02-04 12:12:43,035 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:12:43] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 12:12:43,036 - INFO - app - Total de chunks générés: 8553
+2025-02-04 12:12:43,037 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 12:12:43,040 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:12:43] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 12:12:43,093 - INFO - app - Fichier The_Whole-Brain_Child__12_Revolutionary_Strategies_to_Nurture_Your_Child_s_Developing_Mind__PDFDrive_.pdf découpé en 650 chunks
+2025-02-04 12:12:43,093 - INFO - app - Total de chunks générés: 8553
+2025-02-04 12:12:43,095 - ERROR - app - Erreur de traitement: Could not connect to tenant default_tenant. Are you sure it exists?
+2025-02-04 12:12:43,099 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:12:43] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-04 12:22:53,147 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:22:53] "GET / HTTP/1.1" 200 -
+2025-02-04 12:22:53,320 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:22:53] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-04 12:22:53,350 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:22:53] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-04 12:22:57,419 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:22:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 12:32:31,415 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:32:31] "GET / HTTP/1.1" 200 -
+2025-02-04 12:32:31,564 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:32:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 12:32:31,578 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 12:32:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-04 13:39:26,078 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 13:39:26] "GET / HTTP/1.1" 200 -
+2025-02-04 13:39:26,237 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 13:39:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 13:39:26,357 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 13:39:26] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2025-02-04 13:53:35,582 - INFO - app - Requête chat reçue
+2025-02-04 13:53:35,583 - INFO - app - Initialisation du vector store
+2025-02-04 13:53:35,583 - WARNING - app - Le dossier de persistance n'existe pas ou est vide
+2025-02-04 13:53:35,584 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 13:53:35] "GET /chat?message=tu+est+expert+en+quoi+?&api_key=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&provider=openai&history=[{"role":"user","content":"tu+est+expert+en+quoi+?"}] HTTP/1.1" 200 -
+2025-02-04 13:53:36,451 - INFO - _client - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-02-04 13:53:36,453 - ERROR - app - Erreur pendant la génération: Error code: 404 - {'error': {'message': 'The model `gpt-4` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+Traceback (most recent call last):
+  File "/home/remenby/code/web/rag_project/app.py", line 258, in generate
+    response = client.chat.completions.create(
+  File "/home/remenby/code/web/rag_project/venv/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/remenby/code/web/rag_project/venv/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 850, in create
+    return self._post(
+  File "/home/remenby/code/web/rag_project/venv/lib/python3.10/site-packages/openai/_base_client.py", line 1283, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/remenby/code/web/rag_project/venv/lib/python3.10/site-packages/openai/_base_client.py", line 960, in request
+    return self._request(
+  File "/home/remenby/code/web/rag_project/venv/lib/python3.10/site-packages/openai/_base_client.py", line 1064, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `gpt-4` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-02-04 13:54:29,334 - INFO - app - Requête chat reçue
+2025-02-04 13:54:29,335 - INFO - app - Initialisation du vector store
+2025-02-04 13:54:29,335 - WARNING - app - Le dossier de persistance n'existe pas ou est vide
+2025-02-04 13:54:29,336 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 13:54:29] "GET /chat?message=test&api_key=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&provider=openai&history=[{"role":"user","content":"tu+est+expert+en+quoi+?"},{"role":"user","content":"test"}] HTTP/1.1" 200 -
+2025-02-04 13:54:29,652 - INFO - _client - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-02-04 13:54:29,653 - ERROR - app - Erreur pendant la génération: Error code: 404 - {'error': {'message': 'The model `gpt-4` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+Traceback (most recent call last):
+  File "/home/remenby/code/web/rag_project/app.py", line 258, in generate
+    response = client.chat.completions.create(
+  File "/home/remenby/code/web/rag_project/venv/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/remenby/code/web/rag_project/venv/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 850, in create
+    return self._post(
+  File "/home/remenby/code/web/rag_project/venv/lib/python3.10/site-packages/openai/_base_client.py", line 1283, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/remenby/code/web/rag_project/venv/lib/python3.10/site-packages/openai/_base_client.py", line 960, in request
+    return self._request(
+  File "/home/remenby/code/web/rag_project/venv/lib/python3.10/site-packages/openai/_base_client.py", line 1064, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `gpt-4` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-02-04 14:56:10,424 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 14:56:10] "[33mGET /.env HTTP/1.1[0m" 404 -
+2025-02-04 16:12:22,368 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:12:22] "GET / HTTP/1.1" 200 -
+2025-02-04 16:12:22,594 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:12:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 16:12:22,707 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:12:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-04 16:12:23,037 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:12:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 16:13:51,002 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:13:51] "GET / HTTP/1.1" 200 -
+2025-02-04 16:13:51,259 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:13:51] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-04 16:13:51,261 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:13:51] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-04 16:13:52,666 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:13:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 16:15:50,139 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:50] "GET /files HTTP/1.1" 200 -
+2025-02-04 16:15:50,354 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:50] "GET /static/css/style_file.css HTTP/1.1" 200 -
+2025-02-04 16:15:50,355 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:50] "GET /static/js/script_file.js HTTP/1.1" 200 -
+2025-02-04 16:15:50,565 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:50] "GET /list_files HTTP/1.1" 200 -
+2025-02-04 16:15:50,768 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:50] "GET /file_size/Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf HTTP/1.1" 200 -
+2025-02-04 16:15:50,769 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:50] "GET /file_size/Parenting_with_Love_and_Logic_-_Foster_Cline.pdf HTTP/1.1" 200 -
+2025-02-04 16:15:50,769 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:50] "GET /file_size/How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 16:15:50,974 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:50] "GET /file_size/The_Social_Skills_Guidebook__Manage_Shyness_Improve_Your_Conversations_and_Make_Friends_Without_Giving_Up_Who_You_Are__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 16:15:50,977 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:50] "GET /file_size/What_s_Going_on_in_There__-_Lise_Eliot.pdf HTTP/1.1" 200 -
+2025-02-04 16:15:50,979 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:50] "GET /file_size/It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 16:15:51,091 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:51] "GET /file_size/The_wonder_weeks___how_to_stimulate_your_baby_s_mental_development_and_help_him_turn_his_10_predictable_great_fussy_phases_into_magical_leaps_forward__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 16:15:51,094 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:51] "GET /file_size/Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf HTTP/1.1" 200 -
+2025-02-04 16:15:51,097 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:51] "GET /file_size/Raising_An_Emotionally_Intelligent_Child_The_Heart_of_Parenting__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 16:15:51,176 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:51] "GET /file_size/Siblings_Without_Rivalry_-_Adele_Faber.pdf HTTP/1.1" 200 -
+2025-02-04 16:15:51,179 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:15:51] "GET /file_size/The_Whole-Brain_Child__12_Revolutionary_Strategies_to_Nurture_Your_Child_s_Developing_Mind__PDFDrive_.pdf HTTP/1.1" 200 -
+2025-02-04 16:16:18,731 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:16:18] "GET / HTTP/1.1" 200 -
+2025-02-04 16:16:18,951 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:16:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 16:16:18,954 - INFO - _internal - 136.244.116.133 - - [04/Feb/2025 16:16:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -

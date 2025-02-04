@@ -21,7 +21,7 @@ knowledgeRAG est une application web de Question-Réponse intelligente basée su
 - **Frontend**: HTML, CSS, JavaScript (Vanilla)
 - **Vector Store**: Chroma
 - **Embeddings**: HuggingFace (MiniLM-L6-v2)
-- **LLM**: OpenAI GPT-4 / Deepseek
+- **LLM**: OpenAI GPT-4 / Deepseek V3
 
 ## 📋 Prérequis
 
