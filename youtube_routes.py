@@ -32,7 +32,7 @@ def search():
     data = request.json
     query = data.get('query', '')
     lang = data.get('lang', 'US')
-    limit = data.get('limit', 5)
+    limit = data.get('limit', 10)
     try:
         results = youtube_manager.search_videos(query, lang, limit)
         return jsonify({'success': True, 'results': results})
