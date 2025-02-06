@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Transcriber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_yt.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <a href="/" class="back-button" title="Retour au chat">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="header-center">
+                <h1><i class="fab fa-youtube"></i> YouTube Transcriber</h1>
+                <p class="subtitle">Transcrire les vidéos YouTube</p>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Collez un lien YouTube ou recherchez une vidéo...">
+                <button onclick="searchVideos()">Rechercher</button>
+            </div>
+        </div>
+        
+        <div id="results" class="results-container"></div>
+        
+        <div id="downloads" class="downloads-container">
+            <h2><i class="fas fa-tasks"></i> Transcriptions en cours</h2>
+            <div id="downloadsList"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script_yt.js') }}"></script>
+</body>
+</html>

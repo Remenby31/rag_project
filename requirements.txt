@@ -8,3 +8,6 @@ PyPDF2
 openai
 gunicorn
 openai
+selenium
+yt-dlp
+pydub

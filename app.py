@@ -9,10 +9,11 @@ from werkzeug.utils import secure_filename
 from langchain.text_splitter import TokenTextSplitter
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
+from openai_wrapper import OpenAIEmbeddingsWrapper
 import PyPDF2
 from openai import OpenAI
 from chromadb.config import Settings
-
+from youtube_routes import youtube_bp
 
 # Désactivation de la télémétrie Chroma
 os.environ['ANONYMIZED_TELEMETRY'] = 'False'
@@ -35,10 +36,11 @@ app.secret_key = os.urandom(24)
 UPLOAD_FOLDER = 'cache/uploads'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'docx'}
 PERSIST_DIRECTORY = 'cache/vector_store'
-CHUNK_SIZE = 256  # En tokens
+CHUNK_SIZE = 512  # En tokens
 OVERLAP_SIZE = 50  # En tokens
-NB_RESULTS = 7
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+NB_RESULTS = 10
+EMBEDDING_PROVIDER = "openai"  # ou "local"
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2" if EMBEDDING_PROVIDER == "local" else "text-embedding-3-small"
 
 # Initialisation
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -68,10 +70,18 @@ def read_file(file_path):
     else:
         raise ValueError(f"Type de fichier non supporté: {extension}")
 
+def get_embeddings():
+    """Retourne l'instance d'embedding appropriée selon le provider configuré"""
+    if EMBEDDING_PROVIDER == "openai":
+        return OpenAIEmbeddingsWrapper(model=EMBEDDING_MODEL)
+    else:
+        return HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+
 def process_documents():
     try:
-        embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+        embeddings = get_embeddings()
 
+        # Configuration de Chroma avec similarité cosinus
         client_settings = Settings(
             persist_directory=PERSIST_DIRECTORY,
             anonymized_telemetry=False
@@ -79,7 +89,11 @@ def process_documents():
         
         # Vérifier si le vector store existe déjà
         if os.path.exists(PERSIST_DIRECTORY):
-            vector_store = Chroma(persist_directory=PERSIST_DIRECTORY, embedding_function=embeddings)
+            vector_store = Chroma(
+                persist_directory=PERSIST_DIRECTORY, 
+                embedding_function=embeddings,
+                collection_metadata={"hnsw:space": "cosine"}  # Force l'utilisation de la similarité cosinus
+            )
         else:
             vector_store = None
 
@@ -116,7 +130,8 @@ def process_documents():
                     texts=documents,
                     embedding=embeddings,
                     metadatas=metadatas,
-                    persist_directory=PERSIST_DIRECTORY
+                    persist_directory=PERSIST_DIRECTORY,
+                    collection_metadata={"hnsw:space": "cosine"}  # Force l'utilisation de la similarité cosinus
                 )
             else:
                 vector_store.add_texts(texts=documents, metadatas=metadatas)
@@ -133,8 +148,12 @@ def get_vector_store():
             logging.warning("Le dossier de persistance n'existe pas ou est vide")
             return None
             
-        embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
-        vector_store = Chroma(persist_directory=PERSIST_DIRECTORY, embedding_function=embeddings)
+        embeddings = get_embeddings()
+        vector_store = Chroma(
+            persist_directory=PERSIST_DIRECTORY, 
+            embedding_function=embeddings,
+            collection_metadata={"hnsw:space": "cosine"}  # Force l'utilisation de la similarité cosinus
+        )
         logging.info(f"Vector store initialisé avec succès. Collection count: {vector_store._collection.count()}")
         return vector_store
     except Exception as e:
@@ -147,7 +166,9 @@ def upload_file():
         logging.error('Aucun fichier fourni')
         return jsonify({'error': 'Aucun fichier fourni'}), 400
     
-    api_key = request.form.get('api_key')  # Récupération de la clé API
+    api_key = request.form.get('api_key')
+    provider = request.form.get('provider', 'openai')
+    
     if not api_key:
         logging.error('Clé API requise')
         return jsonify({'error': 'Clé API requise'}), 400
@@ -200,6 +221,36 @@ def list_files():
     files = os.listdir(app.config['UPLOAD_FOLDER'])
     return jsonify({'files': files})
 
+def reformulate_question(message, api_key, provider="openai"):
+    """Reformule la question pour améliorer la recherche RAG"""
+    try:
+        client = OpenAI(
+            api_key=api_key,
+            base_url="https://api.deepseek.com" if provider == "deepseek" else None
+        )
+        
+        system_prompt = """Tu es un expert en reformulation de questions pour la recherche documentaire.
+        Ton rôle est de reformuler la question de l'utilisateur pour maximiser la pertinence des résultats de recherche.
+        Garde l'essentiel de la question mais ajoute des termes et concepts connexes pertinents.
+        Réponds uniquement avec la question reformulée, sans autre commentaire."""
+
+        response = client.chat.completions.create(
+            model="deepseek-chat" if provider == "deepseek" else "gpt-4o",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": f"Voici la question de l'utilisateur : {message}"}
+            ],
+            stream=False
+        )
+        
+        reformulated = response.choices[0].message.content.strip()
+        logging.info(f"Question originale: {message}")
+        logging.info(f"Question reformulée: {reformulated}")
+        return reformulated
+    except Exception as e:
+        logging.warning(f"Erreur lors de la reformulation: {str(e)}")
+        return message  # En cas d'erreur, on utilise la question originale
+
 @app.route('/chat', methods=['GET'])
 def chat():
     logging.info('Requête chat reçue')
@@ -207,6 +258,15 @@ def chat():
     api_key = request.args.get('api_key')
     provider = request.args.get('provider', 'openai')
     history = json.loads(request.args.get('history', '[]'))  # Récupération de l'historique
+    
+    # Ajout de la gestion du nombre de résultats
+    try:
+        nb_results = int(request.args.get('nb_results', '5'))
+        # Limiter le nombre entre 1 et 20
+        nb_results = max(0, min(30, nb_results))
+    except ValueError:
+        logging.warning('Nombre de résultats invalide')
+        nb_results = 5  # Valeur par défaut si invalide
     
     if not api_key or not message:
         logging.error('Clé API ou message manquant')
@@ -217,6 +277,9 @@ def chat():
         return jsonify({'error': 'Clé API invalide'}), 400
 
     try:
+        # Reformulation de la question
+        reformulated_message = reformulate_question(message, api_key, provider)
+        
         # Initialiser les variables context et sources
         context = ""
         sources = []
@@ -226,12 +289,13 @@ def chat():
         if vectordb is not None:
             collection_count = vectordb._collection.count()
             if collection_count > 0:
-                actual_results = min(NB_RESULTS, collection_count)
-                docs = vectordb.similarity_search(message, k=actual_results)
+                # Utiliser nb_results au lieu de la constante NB_RESULTS
+                actual_results = min(nb_results, collection_count)
+                docs = vectordb.similarity_search(reformulated_message, k=actual_results)
                 context = "\n\n".join([doc.page_content for doc in docs])
                 sources = [{
                     "source": doc.metadata['source'],
-                    "content": doc.page_content[:500] + "...",
+                    "content": doc.page_content,
                     "id": str(uuid.uuid4())[:8]
                 } for doc in docs]
         else:
@@ -241,22 +305,21 @@ def chat():
             if vectordb is not None:
                 collection_count = vectordb._collection.count()
                 if collection_count > 0:
-                    actual_results = min(NB_RESULTS, collection_count)
-                    docs = vectordb.similarity_search(message, k=actual_results)
+                    # Utiliser nb_results ici aussi
+                    actual_results = min(nb_results, collection_count)
+                    docs = vectordb.similarity_search(reformulated_message, k=actual_results)
                     context = "\n\n".join([doc.page_content for doc in docs])
                     sources = [{
                         "source": doc.metadata['source'],
-                        "content": doc.page_content[:500] + "...",
+                        "content": doc.page_content,
                         "id": str(uuid.uuid4())[:8]
                     } for doc in docs]
 
 
         def generate():
             try:
-                # Envoyer immédiatement un flush pour établir la connexion
                 yield "data: {}\n\n"
 
-                # Envoyer les sources si elles existent
                 if sources:
                     sources_json = json.dumps({'type': 'sources', 'content': sources})
                     yield f"data: {sources_json}\n\n"
@@ -268,19 +331,26 @@ def chat():
                 
                 model = "deepseek-chat" if provider == "deepseek" else "gpt-4o"
                 
-                # Amélioration du système de messages
-                system_message = (
-                    "Tu es un assistant IA avec une excellente mémoire. "
-                    "Utilise le contexte suivant pour répondre aux questions, "
-                    "mais souviens-toi aussi des échanges précédents pour maintenir la cohérence :"
-                    f"\n\nContexte:\n{context}"
+                # Nouveau message système plus simple
+                system_prompt = (
+                    """Tu es un assistant de création de contenu de formation, alimenté par une recherche documentaire.
+                    Sers-toi des informations fournies pour répondre à la question de l'utilisateur, en citant les passages pertinents provenant du contenu qui t'ont aider a répondre.
+                    Quand tu cite, utilise le format suivant : "(source: nom du document, page: numéro de page)".
+                    """
                 )
                 
-                messages = [{"role": "system", "content": system_message}]
+                messages = [{"role": "system", "content": system_prompt}]
                 
-                # Limitation de l'historique aux 10 derniers messages pour éviter les dépassements
                 if history:
-                    messages.extend(history[-10:])
+                    messages.extend(history)
+                
+                # Ajout du contexte RAG comme un message assistant avant la question
+                logging.info(f"Contexte RAG: {len(context)} caractères")
+                if context:
+                    messages.append({
+                        "role": "assistant",
+                        "content": "D'après les documents consultés, voici les informations pertinentes :\n\n" + context
+                    })
                 
                 messages.append({"role": "user", "content": message})
                 
@@ -347,6 +417,9 @@ def get_file_size(filename):
         return jsonify({'error': 'File not found'}), 404
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+# Enregistrement des blueprints
+app.register_blueprint(youtube_bp, url_prefix='/youtube')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=18900, debug=False)

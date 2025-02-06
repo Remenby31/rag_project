@@ -77,6 +77,11 @@ async function uploadFiles(files) {
         const formData = new FormData();
         Array.from(files).forEach(file => formData.append('file', file)); // Changé de 'files' à 'file'
         formData.append('api_key', getCookie('api_key'));
+        formData.append('provider', getCookie('api_provider')); // Ajout du provider
+
+        if (!formData.get('api_key')) {
+            throw {error: 'Clé API manquante. Veuillez configurer votre clé API.'};
+        }
 
         const response = await fetch('/upload', { 
             method: 'POST', 
@@ -115,12 +120,14 @@ async function sendMessage() {
     try {
         const apiKey = getCookie('api_key');
         const provider = getCookie('api_provider');
+        const nbResults = getCookie('nb_results') || '5'; // valeur par défaut si non définie
         if (!apiKey) throw new Error('API key missing');
 
         const params = new URLSearchParams({
             message: message,
             api_key: apiKey,
             provider: provider,
+            nb_results: nbResults,
             history: JSON.stringify(chatHistory)
         });
 
@@ -289,6 +296,7 @@ function showStatusMessage(message, type) {
 function setApiKey() {
     const apiKey = document.getElementById('apiKey').value.trim();
     const provider = document.getElementById('apiProvider').value;
+    const nbResults = document.getElementById('nbResults').value;
     
     const validation = validateApiKey(apiKey);
     
@@ -297,8 +305,9 @@ function setApiKey() {
         return;
     }
     
-    setCookie('api_key', apiKey, 30); // Conservation pendant 30 jours
+    setCookie('api_key', apiKey, 30);
     setCookie('api_provider', provider, 30);
+    setCookie('nb_results', nbResults, 30);
     
     toggleSettings();
     showStatusMessage('Configuration API sauvegardée', 'success');
@@ -307,6 +316,7 @@ function setApiKey() {
 function loadApiSettings() {
     const apiKey = getCookie('api_key');
     const provider = getCookie('api_provider');
+    const nbResults = getCookie('nb_results');
     
     if (apiKey) {
         document.getElementById('apiKey').value = apiKey;
@@ -315,6 +325,10 @@ function loadApiSettings() {
     
     if (provider) {
         document.getElementById('apiProvider').value = provider;
+    }
+
+    if (nbResults) {
+        document.getElementById('nbResults').value = nbResults;
     }
 }
 
