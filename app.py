@@ -251,17 +251,18 @@ def reformulate_question(message, api_key, provider="openai"):
         logging.warning(f"Erreur lors de la reformulation: {str(e)}")
         return message  # En cas d'erreur, on utilise la question originale
 
-@app.route('/chat', methods=['GET'])
+@app.route('/chat', methods=['POST'])
 def chat():
     logging.info('Requête chat reçue')
-    message = request.args.get('message')
-    api_key = request.args.get('api_key')
-    provider = request.args.get('provider', 'openai')
-    history = json.loads(request.args.get('history', '[]'))  # Récupération de l'historique
+    data = request.json  # Récupération des données du corps de la requête
+    message = data.get('message')
+    api_key = data.get('api_key')
+    provider = data.get('provider', 'openai')
+    history = data.get('history', [])  # L'historique est déjà un objet JSON
     
     # Ajout de la gestion du nombre de résultats
     try:
-        nb_results = int(request.args.get('nb_results', '5'))
+        nb_results = int(data.get('nb_results', '5'))
         # Limiter le nombre entre 1 et 20
         nb_results = max(0, min(30, nb_results))
     except ValueError:
@@ -277,19 +278,16 @@ def chat():
         return jsonify({'error': 'Clé API invalide'}), 400
 
     try:
-        # Reformulation de la question
+        # Le reste de la fonction reste exactement identique
         reformulated_message = reformulate_question(message, api_key, provider)
         
-        # Initialiser les variables context et sources
         context = ""
         sources = []
         
-        # Tenter de récupérer le contexte si disponible
         vectordb = get_vector_store()
         if vectordb is not None:
             collection_count = vectordb._collection.count()
             if collection_count > 0:
-                # Utiliser nb_results au lieu de la constante NB_RESULTS
                 actual_results = min(nb_results, collection_count)
                 docs = vectordb.similarity_search(reformulated_message, k=actual_results)
                 context = "\n\n".join([doc.page_content for doc in docs])
@@ -305,7 +303,6 @@ def chat():
             if vectordb is not None:
                 collection_count = vectordb._collection.count()
                 if collection_count > 0:
-                    # Utiliser nb_results ici aussi
                     actual_results = min(nb_results, collection_count)
                     docs = vectordb.similarity_search(reformulated_message, k=actual_results)
                     context = "\n\n".join([doc.page_content for doc in docs])
@@ -314,7 +311,6 @@ def chat():
                         "content": doc.page_content,
                         "id": str(uuid.uuid4())[:8]
                     } for doc in docs]
-
 
         def generate():
             try:
@@ -331,7 +327,6 @@ def chat():
                 
                 model = "deepseek-chat" if provider == "deepseek" else "gpt-4o"
                 
-                # Nouveau message système plus simple
                 system_prompt = (
                     """Tu es un assistant de création de contenu de formation, alimenté par une recherche documentaire.
                     Sers-toi des informations fournies pour répondre à la question de l'utilisateur, en citant les passages pertinents provenant du contenu qui t'ont aider a répondre.
@@ -344,7 +339,6 @@ def chat():
                 if history:
                     messages.extend(history)
                 
-                # Ajout du contexte RAG comme un message assistant avant la question
                 logging.info(f"Contexte RAG: {len(context)} caractères")
                 if context:
                     messages.append({
@@ -384,6 +378,7 @@ def chat():
     except Exception as e:
         logging.error(f'Erreur globale du chat: {str(e)}', exc_info=True)
         return jsonify({'error': str(e)}), 500
+
 
 @app.route('/set_api_key', methods=['POST'])
 def set_api_key():

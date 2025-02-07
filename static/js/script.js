@@ -120,66 +120,81 @@ async function sendMessage() {
     try {
         const apiKey = getCookie('api_key');
         const provider = getCookie('api_provider');
-        const nbResults = getCookie('nb_results') || '5'; // valeur par défaut si non définie
+        const nbResults = getCookie('nb_results') || '5';
         if (!apiKey) throw new Error('API key missing');
 
-        const params = new URLSearchParams({
+        // Création du body de la requête
+        const requestBody = {
             message: message,
             api_key: apiKey,
             provider: provider,
             nb_results: nbResults,
-            history: JSON.stringify(chatHistory)
+            history: chatHistory  // Pas besoin de JSON.stringify ici
+        };
+
+        // Création de la requête fetch avec les bonnes options pour le streaming
+        const response = await fetch('/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(requestBody)
         });
 
-        const eventSource = new EventSource(`/chat?${params.toString()}`);
+        if (!response.ok) throw new Error('Network response was not ok');
+        if (!response.body) throw new Error('ReadableStream not supported');
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
         let hasReceivedData = false;
 
-        eventSource.onopen = () => {
-            hasReceivedData = false;
-            showStatusMessage('Connexion établie', 'success');
-        };
-        
-        eventSource.addEventListener('message', function(event) {
-            try {
-                hasReceivedData = true;
-                const data = JSON.parse(event.data);
-                
-                if (data.type === 'sources') {
-                    currentSources = data.content;
-                    showStatusMessage('Génération en cours...', 'success');
-                } 
-                else if (data.type === 'response') {
-                    streamBuffer += data.content;
-                    updateMessageContent(streamBuffer);
-                }
-                else if (data.type === 'status' && data.content === 'done') {
-                    chatHistory.push({ role: 'assistant', content: streamBuffer });
-                    saveChatHistory();
-                    finalizeBotMessage(streamBuffer, currentSources);
-                    eventSource.close();
-                    isProcessing = false;
-                    showStatusMessage('Prêt', 'success');
-                }
-                else if (data.type === 'error') {
-                    showStatusMessage(data.content, 'error');
-                    eventSource.close();
-                    isProcessing = false;
-                }
-            } catch (error) {
-                console.error('Error parsing SSE:', error);
-            }
-        });
+        showStatusMessage('Connexion établie', 'success');
 
-        eventSource.onerror = function(error) {
-            if (!hasReceivedData) {
-                console.error('SSE Error:', error);
-                eventSource.close();
-                isProcessing = false;
-                showStatusMessage('Erreur de connexion', 'error');
+        while (true) {
+            const {value, done} = await reader.read();
+            if (done) break;
+
+            hasReceivedData = true;
+            buffer += decoder.decode(value, {stream: true});
+
+            // Traitement des événements SSE
+            const lines = buffer.split('\n');
+            buffer = lines.pop() || ''; // Garde le dernier fragment incomplet
+
+            for (const line of lines) {
+                if (line.startsWith('data: ')) {
+                    try {
+                        const data = JSON.parse(line.slice(6));
+                        
+                        if (data.type === 'sources') {
+                            currentSources = data.content;
+                            showStatusMessage('Génération en cours...', 'success');
+                        } 
+                        else if (data.type === 'response') {
+                            streamBuffer += data.content;
+                            updateMessageContent(streamBuffer);
+                        }
+                        else if (data.type === 'status' && data.content === 'done') {
+                            chatHistory.push({ role: 'assistant', content: streamBuffer });
+                            saveChatHistory();
+                            finalizeBotMessage(streamBuffer, currentSources);
+                            isProcessing = false;
+                            showStatusMessage('Prêt', 'success');
+                        }
+                        else if (data.type === 'error') {
+                            showStatusMessage(data.content, 'error');
+                            isProcessing = false;
+                        }
+                    } catch (error) {
+                        console.error('Error parsing SSE:', error);
+                    }
+                }
             }
-        };
+        }
 
     } catch (error) {
+        console.error('Fetch Error:', error);
         showStatusMessage(error.message, 'error');
         isProcessing = false;
     }
