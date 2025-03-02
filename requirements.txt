@@ -11,3 +11,7 @@ openai
 selenium
 yt-dlp
 pydub
+instaloader
+beautifulsoup4
+pyktok
+playwright

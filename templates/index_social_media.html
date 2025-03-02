@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléchargeur de Vidéos - Instagram & TikTok</title>
+    <link rel="stylesheet" href="/static/css/style_social_media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-download"></i> Téléchargeur de Vidéos - Instagram & TikTok</h1>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="url-input">
+                    <input type="text" id="video-url" placeholder="Collez l'URL de la vidéo ici...">
+                    <select id="platform-select">
+                        <option value="instagram">Instagram</option>
+                        <option value="tiktok">TikTok</option>
+                    </select>
+                </div>
+                <button id="download-btn">Télécharger</button>
+            </div>
+
+            <div class="examples">
+                <p>Exemples d'URL :</p>
+                <ul>
+                    <li><span class="platform instagram">Instagram:</span> https://www.instagram.com/reels/DEFuLvpsqtJ/</li>
+                    <li><span class="platform tiktok">TikTok:</span> https://www.tiktok.com/@username/video/1234567890</li>
+                </ul>
+            </div>
+
+            <div id="status-container" class="hidden">
+                <div class="status-message">
+                    <span id="status-icon" class="loading"><i class="fas fa-spinner fa-spin"></i></span>
+                    <span id="status-text">Traitement en cours...</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <div class="result-header">
+                    <h3>Vidéo prête !</h3>
+                    <span class="expiry-info">Disponible pendant <span id="expiry-time">60</span> minutes</span>
+                </div>
+                <div class="video-preview-container">
+                    <video id="video-preview" controls></video>
+                </div>
+                <div class="download-actions">
+                    <a id="direct-download-btn" href="#" class="action-btn">
+                        <i class="fas fa-download"></i> Télécharger
+                    </a>
+                    <button id="copy-link-btn" class="action-btn">
+                        <i class="fas fa-link"></i> Copier le lien
+                    </button>
+                    <button id="transcribe-btn" class="action-btn">
+                        <i class="fas fa-file-alt"></i> Transcrire
+                    </button>
+                </div>
+            </div>
+
+            <div id="transcription-container" class="hidden">
+                <div class="transcription-header">
+                    <h3>Transcription</h3>
+                    <button id="close-transcription-btn" class="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <div id="transcription-status" class="status-message">
+                    <span class="loading"><i class="fas fa-spinner fa-spin"></i></span>
+                    <span>Transcription en cours...</span>
+                </div>
+                <div id="transcription-content" class="hidden">
+                    <div class="transcription-text"></div>
+                    <div class="transcription-actions">
+                        <button id="copy-transcription-btn" class="action-btn">
+                            <i class="fas fa-copy"></i> Copier le texte
+                        </button>
+                        <a id="download-transcription-btn" href="#" class="action-btn" download="transcription.txt">
+                            <i class="fas fa-download"></i> Télécharger en TXT
+                        </a>
+                    </div>
+                </div>
+                <div id="transcription-error" class="hidden">
+                    <div class="error-message">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Erreur lors de la transcription</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="error-container" class="hidden">
+                <div class="error-message">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span id="error-text">Une erreur est survenue</span>
+                </div>
+                <button id="try-again-btn">Réessayer</button>
+            </div>
+        </main>
+
+        <div id="toast" class="hidden">Lien copié dans le presse-papier !</div>
+
+        <footer>
+            <p class="api-status">Statut de l'API : <span id="api-status">Vérification...</span></p>
+        </footer>
+    </div>
+
+    <script src="/static/js/script_social_media.js"></script>
+</body>
+</html>

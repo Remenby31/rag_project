@@ -14,6 +14,7 @@ import PyPDF2
 from openai import OpenAI
 from chromadb.config import Settings
 from youtube_routes import youtube_bp
+from routes_tiktok_insta import social_media_bp  # Nouvel import
 
 # Désactivation de la télémétrie Chroma
 os.environ['ANONYMIZED_TELEMETRY'] = 'False'
@@ -415,6 +416,7 @@ def get_file_size(filename):
 
 # Enregistrement des blueprints
 app.register_blueprint(youtube_bp, url_prefix='/youtube')
+app.register_blueprint(social_media_bp, url_prefix='/social')  # Nouveau blueprint
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=18900, debug=False)
+    app.run(host='0.0.0.0', port=18900, debug=True)

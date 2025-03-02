@@ -13,3 +13,6 @@ __pycache__/
 
 # Env pyton
 venv/
+videos/*
+static/transcripts/*
+nohup.out

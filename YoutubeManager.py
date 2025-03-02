@@ -38,6 +38,8 @@ class YoutubeManager:
             url = f"https://www.youtube.com/results?search_query={query}&gl={lang}&hl=en"
             self.logger.debug(f"Accessing URL: {url}")
             driver.get(url)
+            # On enregistre la page pour le débogage
+            driver.save_screenshot("cache/youtube_search.png")
             
             wait = WebDriverWait(driver, 3)
             videos = wait.until(EC.presence_of_all_elements_located(
@@ -50,6 +52,7 @@ class YoutubeManager:
                 url = video.get_attribute('href')
                 if title and url:
                     results.append((title, url))
+            
                     
             self.logger.info(f"Found {len(results)} videos")
             return results

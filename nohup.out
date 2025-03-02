@@ -1,3 +1,4 @@
+If pyktok does not operate as expected, you may find it helpful to run the 'specify_browser' function. 'specify_browser' takes as its sole argument a string representing a browser installed on your system, e.g. "chrome," "firefox," "edge," etc.
  * Serving Flask app 'app'
  * Debug mode: off
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
@@ -5,164 +6,470 @@ INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a
  * Running on http://127.0.0.1:18900
  * Running on http://192.168.1.33:18900
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:53] "GET /files HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:53] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:53] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:54] "GET /list_files HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:54] "GET /file_size/How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:54] "GET /file_size/Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:54] "GET /file_size/It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:54] "GET /file_size/Whose_job_is_it_to_educate_our_children____Helen_ODonnell___TEDxNantwich.txt HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:54] "GET /file_size/Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:55] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [06/Feb/2025 18:18:55] "GET /static/js/script.js HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 08:59:45] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 08:59:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 08:59:46] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 08:59:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:01:47] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:01:47] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:01:47] "GET /static/js/script.js HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:01:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:08] "GET /files HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:09] "GET /static/css/style_file.css HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:09] "GET /static/js/script_file.js HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:09] "GET /list_files HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:10] "GET /file_size/Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:10] "GET /file_size/How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:10] "GET /file_size/It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:10] "GET /file_size/Whose_job_is_it_to_educate_our_children____Helen_ODonnell___TEDxNantwich.txt HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:10] "GET /file_size/Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:17] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:02:29] "GET /chat?message=Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.+Répond+à+l'aide+des+documents+dans+ta+mémoire.&api_key=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&provider=openai&nb_results=5&history=[{"role":"user","content":"Hello+!+What+is+your+function+?"},{"role":"assistant","content":"As+an+AI+assistant,+my+function+is+to+understand+and+process+language-based+queries,+provide+information,+perform+tasks,+and+make+recommendations+based+on+the+context+provided."},{"role":"user","content":"What+is+the+document+in+your+memory+?"},{"role":"assistant","content":"The+document+in+my+memory+appears+to+be+pieces+of+mixed+information+related+to+Artificial+Intelligence+and+technology.+There+are+several+components+mentioned:\\n\\n1.+Models+such+as+GPT-4+and+GPT+4-mini+and+vectorization+methods+are+used+in+multiple+processes.+Also,+there's+mention+of+an+'LLM'+though+the+context+doesn't+clarify+what+LLM+stands+for.\\n2.+There's+information+about+contractual+and+financial+details.+Apparently,+subcontractors+are+contracted,+and+there+is+a+ceiling+budget+of+300€+per+month+for+LLM+costs.\\n3.+The+document+discusses+various+levels+of+cloud+providers,+mentioning+OVH,+Scaleway,+and+GCP+and+implicitly+referring+to+data+sovereignty+considerations.\\n4.+There+is+talk+of+evaluation+and+testing+methods,+including+A/B+testing,+vector-based+comparison,+query+testing,+and+more.+It+indicates+utilization+of+an+observability+tool+like+'phospho'+in+production.+The+concept+of+LLM+as+a+judge+is+also+mentioned.\\n5.+Multimodality+and+the+need+for+rapid+iteration+are+outlined.\\n6.+They+mention+some+challenges+in+the+sequential+applications+and+language+evaluation.\\n7.+There+are+references+to+a+company+Rakam+AI+and+its+CEO,+Jean+de+Bodinat.\\n8.+Some+potential+issues+related+to+data+authorization+and+health+software+are+alluded+to.\\n\\nPlease+note+that+the+information+is+fragmented,+which+might+make+the+understanding+a+bit+complex,+and+the+interpretation+might+not+be+100%25+accurate."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte."},{"role":"assistant","content":"1.+Restez+calme+et+patient.\\n2.+Faites+preuve+de+compréhension+et+d'empathie.\\n3.+Ignorez+le+comportement+inapproprié+lorsque+cela+est+sécuritaire.\\n4.+Aidez+votre+enfant+à+exprimer+ses+sentiments.\\n5.+Renforcez+le+comportement+positif."},{"role":"user","content":"Quels+sont+les+documents+dans+ta+mémoire+?"},{"role":"assistant","content":"Je+suis+désolé,+il+semble+y+avoir+une+malentendu.+En+tant+qu'assistant+AI,+je+ne+stocke+pas+de+documents+dans+ma+mémoire.+J'ai+accès+à+une+vaste+quantité+d'informations+et+de+connaissances,+mais+je+ne+garde+pas+de+documents+ou+de+fichiers+spécifiques.+Cependant,+je+peux+me+souvenir+des+informations+de+nos+conversations+précédentes+pour+maintenir+une+conversation+cohérente."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte."},{"role":"assistant","content":"1.+Restez+calme+et+patient.\\n2.+Faites+preuve+de+compréhension+et+d'empathie.\\n3.+Ignorez+le+comportement+inapproprié+lorsque+cela+est+sécuritaire.\\n4.+Aidez+votre+enfant+à+exprimer+ses+sentiments.\\n5.+Renforcez+le+comportement+positif."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.+Répond+à+l'aide+des+documents+dans+ta+mémoire."},{"role":"assistant","content":"En+tant+qu'assistant+IA,+je+tiens+à+préciser+que+je+ne+stocke+pas+de+documents+dans+ma+mémoire.+Néanmoins,+en+me+basant+sur+des+principes+généralement+acceptés+en+psychologie,+voici+comment+réagir+lorsque+votre+enfant+fait+une+crise+:\\n\\n1.+Restez+calme+:+votre+réaction+peut+influencer+celle+de+votre+enfant.\\n2.+Ne+punissez+pas+pendant+la+crise+:+attendez+que+votre+enfant+soit+calmé.\\n3.+Montrez+de+l'empathie+:+faites+comprendre+à+votre+enfant+que+vous+comprenez+ses+sentiments.\\n4.+Ignorez+le+comportement+négatif+(si+possible)+:+cela+peut+désamorcer+la+situation.\\n5.+Communiquez+clairement+et+simplement+:+aidez+votre+enfant+à+comprendre+la+situation.\\n"},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.+Répond+à+l'aide+des+documents+dans+ta+mémoire."},{"role":"assistant","content":"1.+Restez+calme+et+serein.\\n2.+Écoutez+et+montrez+de+l'empathie+pour+les+sentiments+de+l'enfant.\\n3.+Assurez-vous+que+l'environnement+est+sûr.\\n4.+Parlez+avec+des+mots+simples+pour+aider+à+identifier+les+émotions.\\n5.+Encouragez+des+comportements+positifs+une+fois+la+crise+passée."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.+Répond+à+l'aide+des+documents+dans+ta+mémoire."}] HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:04:51] "[32mGET /youtube HTTP/1.1[0m" 308 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:04:51] "GET /youtube/ HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:04:51] "GET /static/css/style_yt.css HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:04:52] "GET /static/js/script_yt.js HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:15] "POST /youtube/search HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:23] "POST /youtube/download HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:23] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:25] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:26] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-[youtube] Extracting URL: https://www.youtube.com/watch?v=PHpPtdk9rco&pp=ygUJcGFyZW50aW5n
-[youtube] PHpPtdk9rco: Downloading webpage
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:27] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-[youtube] PHpPtdk9rco: Downloading tv client config
-[youtube] PHpPtdk9rco: Downloading player 9c6dfc4a
-[youtube] PHpPtdk9rco: Downloading tv player API JSON
-[youtube] PHpPtdk9rco: Downloading ios player API JSON
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:28] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-[youtube] PHpPtdk9rco: Downloading m3u8 information
-[info] PHpPtdk9rco: Downloading 1 format(s): 251
-[download] Destination: cache/downloads/The Single Most Important Parenting Strategy _ Becky Kennedy _ TED.webm
-[download]   0.0% of   11.81MiB at  390.46KiB/s ETA 00:31[download]   0.0% of   11.81MiB at  778.69KiB/s ETA 00:15[download]   0.1% of   11.81MiB at    1.44MiB/s ETA 00:08[download]   0.1% of   11.81MiB at    2.64MiB/s ETA 00:04[download]   0.3% of   11.81MiB at    3.45MiB/s ETA 00:03[download]   0.5% of   11.81MiB at  714.47KiB/s ETA 00:16INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:30] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-[download]   1.1% of   11.81MiB at  710.18KiB/s ETA 00:16[download]   2.1% of   11.81MiB at    1.04MiB/s ETA 00:11[download]   4.2% of   11.81MiB at    1.44MiB/s ETA 00:07[download]   8.5% of   11.81MiB at    2.27MiB/s ETA 00:04[download]  16.9% of   11.81MiB at    3.72MiB/s ETA 00:02[download]  33.9% of   11.81MiB at    6.27MiB/s ETA 00:01[download]  67.7% of   11.81MiB at   10.45MiB/s ETA 00:00[download]  81.0% of   11.81MiB at   11.87MiB/s ETA 00:00[download]  81.0% of   11.81MiB at  Unknown B/s ETA Unknown[download]  81.0% of   11.81MiB at    1.83MiB/s ETA 00:01  [download]  81.0% of   11.81MiB at    2.71MiB/s ETA 00:00[download]  81.1% of   11.81MiB at    4.96MiB/s ETA 00:00[download]  81.2% of   11.81MiB at    9.27MiB/s ETA 00:00[download]  81.5% of   11.81MiB at   17.17MiB/s ETA 00:00[download]  82.0% of   11.81MiB at   31.42MiB/s ETA 00:00[download]  83.1% of   11.81MiB at   54.85MiB/s ETA 00:00[download]  85.2% of   11.81MiB at   46.60MiB/s ETA 00:00[download]  89.4% of   11.81MiB at   42.05MiB/s ETA 00:00[download]  97.9% of   11.81MiB at   40.83MiB/s ETA 00:00[download] 100.0% of   11.81MiB at   42.49MiB/s ETA 00:00[download] 100% of   11.81MiB in 00:00:01 at 9.18MiB/s   
-[ExtractAudio] Destination: cache/downloads/The Single Most Important Parenting Strategy _ Becky Kennedy _ TED.mp3
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:31] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:32] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:33] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:34] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:36] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:37] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:38] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:39] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:40] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:42] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:43] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:44] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:46] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-Deleting original file cache/downloads/The Single Most Important Parenting Strategy _ Becky Kennedy _ TED.webm (pass -k to keep)
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:48] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:50] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:52] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:54] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:56] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:05:58] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:00] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:02] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:04] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:05] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:06] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:07] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:09] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:10] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:11] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:12] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:14] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:15] "GET /youtube/status/49ad73b7-ba38-490f-a2ce-a4e8fca34db7 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:43] "GET /static/transcripts/transcript_49ad73b7-ba38-490f-a2ce-a4e8fca34db7.txt HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:58] "POST /youtube/download HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:58] "GET /youtube/status/6742ed26-99ee-49ac-814f-50bbdab52de2 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:06:59] "GET /youtube/status/6742ed26-99ee-49ac-814f-50bbdab52de2 HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:00] "GET /youtube/status/6742ed26-99ee-49ac-814f-50bbdab52de2 HTTP/1.1" 200 -
-[youtube] Extracting URL: https://www.youtube.com/watch?v=Jyk0fwKF9Y0&pp=ygUJcGFyZW50aW5n
-[youtube] Jyk0fwKF9Y0: Downloading webpage
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:00] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-[youtube] Jyk0fwKF9Y0: Downloading tv client config
-[youtube] Jyk0fwKF9Y0: Downloading player 9c6dfc4a
-[youtube] Jyk0fwKF9Y0: Downloading tv player API JSON
-[youtube] Jyk0fwKF9Y0: Downloading ios player API JSON
-[youtube] Jyk0fwKF9Y0: Downloading m3u8 information
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:03] "GET /files HTTP/1.1" 200 -
-[info] Jyk0fwKF9Y0: Downloading 1 format(s): 251
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:03] "[36mGET /static/css/style_file.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:03] "[36mGET /static/js/script_file.js HTTP/1.1[0m" 304 -
-[download] Destination: cache/downloads/#1 Parenting Psychologist_ What Is Over-Parenting & Are You Doing It_.webm
-[download]   0.0% of   61.02MiB at  305.64KiB/s ETA 03:26[download]   0.0% of   61.02MiB at  686.35KiB/s ETA 01:31[download]   0.0% of   61.02MiB at    1.34MiB/s ETA 00:45[download]   0.0% of   61.02MiB at    2.53MiB/s ETA 00:24[download]   0.0% of   61.02MiB at    3.16MiB/s ETA 00:19[download]   0.1% of   61.02MiB at  710.15KiB/s ETA 01:27INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:04] "GET /list_files HTTP/1.1" 200 -
-[download]   0.2% of   61.02MiB at  709.25KiB/s ETA 01:27[download]   0.4% of   61.02MiB at    1.03MiB/s ETA 00:58INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:04] "GET /file_size/Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:04] "GET /file_size/How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf HTTP/1.1" 200 -
-[download]   0.8% of   61.02MiB at    1.44MiB/s ETA 00:41[download]   1.6% of   61.02MiB at    2.28MiB/s ETA 00:26INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:04] "GET /file_size/Whose_job_is_it_to_educate_our_children____Helen_ODonnell___TEDxNantwich.txt HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:04] "GET /file_size/It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf HTTP/1.1" 200 -
-[download]   3.3% of   61.02MiB at    3.74MiB/s ETA 00:15[download]   6.6% of   61.02MiB at    6.31MiB/s ETA 00:09INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:04] "GET /file_size/Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf HTTP/1.1" 200 -
-[download]  13.1% of   61.02MiB at   10.51MiB/s ETA 00:05[download]  15.6% of   61.02MiB at   11.92MiB/s ETA 00:04[download]  15.6% of   61.02MiB at  Unknown B/s ETA Unknown[download]  15.6% of   61.02MiB at    1.36MiB/s ETA 00:38  [download]  15.6% of   61.02MiB at    2.63MiB/s ETA 00:19[download]  15.7% of   61.02MiB at    5.00MiB/s ETA 00:10[download]  15.7% of   61.02MiB at    9.14MiB/s ETA 00:05[download]  15.7% of   61.02MiB at   16.64MiB/s ETA 00:03[download]  15.8% of   61.02MiB at   30.02MiB/s ETA 00:01[download]  16.0% of   61.02MiB at   53.27MiB/s ETA 00:00[download]  16.4% of   61.02MiB at   11.50MiB/s ETA 00:04[download]  17.3% of   61.02MiB at   18.13MiB/s ETA 00:02[download]  18.9% of   61.02MiB at   24.61MiB/s ETA 00:02[download]  22.2% of   61.02MiB at   26.03MiB/s ETA 00:01[download]  28.7% of   61.02MiB at   28.87MiB/s ETA 00:01[download]  31.4% of   61.02MiB at   29.52MiB/s ETA 00:01[download]  31.4% of   61.02MiB at  Unknown B/s ETA Unknown[download]  31.4% of   61.02MiB at    2.19MiB/s ETA 00:19  [download]  31.4% of   61.02MiB at    2.98MiB/s ETA 00:14[download]  31.4% of   61.02MiB at    4.48MiB/s ETA 00:09[download]  31.5% of   61.02MiB at    7.16MiB/s ETA 00:05[download]  31.5% of   61.02MiB at   11.83MiB/s ETA 00:03[download]  31.6% of   61.02MiB at   19.81MiB/s ETA 00:02[download]  31.8% of   61.02MiB at   33.47MiB/s ETA 00:01[download]  32.2% of   61.02MiB at   35.54MiB/s ETA 00:01[download]  33.0% of   61.02MiB at   33.92MiB/s ETA 00:01[download]  34.7% of   61.02MiB at   33.12MiB/s ETA 00:01[download]  38.0% of   61.02MiB at   31.22MiB/s ETA 00:01[download]  44.5% of   61.02MiB at   30.91MiB/s ETA 00:01[download]  47.4% of   61.02MiB at   31.53MiB/s ETA 00:01[download]  47.4% of   61.02MiB at  Unknown B/s ETA Unknown[download]  47.4% of   61.02MiB at    1.50MiB/s ETA 00:21  [download]  47.4% of   61.02MiB at    3.00MiB/s ETA 00:10[download]  47.4% of   61.02MiB at    5.68MiB/s ETA 00:05[download]  47.5% of   61.02MiB at   10.23MiB/s ETA 00:03[download]  47.5% of   61.02MiB at   18.33MiB/s ETA 00:01[download]  47.6% of   61.02MiB at   32.97MiB/s ETA 00:00[download]  47.8% of   61.02MiB at   50.24MiB/s ETA 00:00[download]  48.2% of   61.02MiB at   37.71MiB/s ETA 00:00[download]  49.0% of   61.02MiB at   34.28MiB/s ETA 00:00[download]  50.7% of   61.02MiB at   33.18MiB/s ETA 00:00[download]  54.0% of   61.02MiB at   31.52MiB/s ETA 00:00[download]  60.5% of   61.02MiB at   31.39MiB/s ETA 00:00[download]  63.1% of   61.02MiB at   32.11MiB/s ETA 00:00[download]  63.1% of   61.02MiB at  Unknown B/s ETA Unknown[download]  63.1% of   61.02MiB at    1.75MiB/s ETA 00:13  [download]  63.1% of   61.02MiB at    2.55MiB/s ETA 00:08[download]  63.1% of   61.02MiB at    4.12MiB/s ETA 00:05[download]  63.1% of   61.02MiB at    6.84MiB/s ETA 00:03[download]  63.2% of   61.02MiB at   11.56MiB/s ETA 00:01[download]  63.3% of   61.02MiB at   19.73MiB/s ETA 00:01[download]  63.5% of   61.02MiB at   33.91MiB/s ETA 00:00[download]  63.9% of   61.02MiB at   36.58MiB/s ETA 00:00[download]  64.7% of   61.02MiB at   33.61MiB/s ETA 00:00[download]  66.3% of   61.02MiB at   32.85MiB/s ETA 00:00[download]  69.6% of   61.02MiB at   31.20MiB/s ETA 00:00[download]  76.2% of   61.02MiB at   31.10MiB/s ETA 00:00[download]  79.1% of   61.02MiB at   31.84MiB/s ETA 00:00[download]  79.1% of   61.02MiB at  Unknown B/s ETA Unknown[download]  79.1% of   61.02MiB at    1.72MiB/s ETA 00:07  [download]  79.1% of   61.02MiB at    2.48MiB/s ETA 00:05[download]  79.1% of   61.02MiB at    3.97MiB/s ETA 00:03[download]  79.2% of   61.02MiB at    6.44MiB/s ETA 00:01[download]  79.2% of   61.02MiB at   10.92MiB/s ETA 00:01[download]  79.3% of   61.02MiB at   18.79MiB/s ETA 00:00[download]  79.5% of   61.02MiB at   32.28MiB/s ETA 00:00[download]  79.9% of   61.02MiB at   36.66MiB/s ETA 00:00[download]  80.7% of   61.02MiB at   33.93MiB/s ETA 00:00[download]  82.4% of   61.02MiB at   32.80MiB/s ETA 00:00[download]  85.7% of   61.02MiB at   31.16MiB/s ETA 00:00[download]  92.2% of   61.02MiB at   31.18MiB/s ETA 00:00[download]  94.7% of   61.02MiB at   31.87MiB/s ETA 00:00[download]  94.7% of   61.02MiB at  Unknown B/s ETA Unknown[download]  94.7% of   61.02MiB at    1.67MiB/s ETA 00:01  [download]  94.7% of   61.02MiB at    2.39MiB/s ETA 00:01[download]  94.7% of   61.02MiB at    4.13MiB/s ETA 00:00[download]  94.7% of   61.02MiB at    7.85MiB/s ETA 00:00[download]  94.8% of   61.02MiB at   14.72MiB/s ETA 00:00[download]  94.9% of   61.02MiB at   27.24MiB/s ETA 00:00[download]  95.1% of   61.02MiB at    4.17MiB/s ETA 00:00[download]  95.5% of   61.02MiB at    7.39MiB/s ETA 00:00[download]  96.3% of   61.02MiB at   12.03MiB/s ETA 00:00[download]  98.0% of   61.02MiB at   17.51MiB/s ETA 00:00[download] 100.0% of   61.02MiB at   21.03MiB/s ETA 00:00[download] 100% of   61.02MiB in 00:00:03 at 16.82MiB/s  
-[ExtractAudio] Destination: cache/downloads/#1 Parenting Psychologist_ What Is Over-Parenting & Are You Doing It_.mp3
-ERROR:root:Erreur lors du traitement des documents: 'Chroma' object has no attribute 'persist'
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:46] "POST /upload HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:46] "GET /list_files HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:46] "GET /file_size/transcript_49ad73b7-ba38-490f-a2ce-a4e8fca34db7.txt HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:46] "GET /file_size/Whose_job_is_it_to_educate_our_children____Helen_ODonnell___TEDxNantwich.txt HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:46] "GET /file_size/How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:46] "GET /file_size/Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:46] "GET /file_size/It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:07:47] "GET /file_size/Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:08:24] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:08:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:08:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:08:36] "GET /chat?message=How+to+praise+children+the+right+way+?&api_key=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&provider=openai&nb_results=5&history=[{"role":"user","content":"Hello+!+What+is+your+function+?"},{"role":"assistant","content":"As+an+AI+assistant,+my+function+is+to+understand+and+process+language-based+queries,+provide+information,+perform+tasks,+and+make+recommendations+based+on+the+context+provided."},{"role":"user","content":"What+is+the+document+in+your+memory+?"},{"role":"assistant","content":"The+document+in+my+memory+appears+to+be+pieces+of+mixed+information+related+to+Artificial+Intelligence+and+technology.+There+are+several+components+mentioned:\\n\\n1.+Models+such+as+GPT-4+and+GPT+4-mini+and+vectorization+methods+are+used+in+multiple+processes.+Also,+there's+mention+of+an+'LLM'+though+the+context+doesn't+clarify+what+LLM+stands+for.\\n2.+There's+information+about+contractual+and+financial+details.+Apparently,+subcontractors+are+contracted,+and+there+is+a+ceiling+budget+of+300€+per+month+for+LLM+costs.\\n3.+The+document+discusses+various+levels+of+cloud+providers,+mentioning+OVH,+Scaleway,+and+GCP+and+implicitly+referring+to+data+sovereignty+considerations.\\n4.+There+is+talk+of+evaluation+and+testing+methods,+including+A/B+testing,+vector-based+comparison,+query+testing,+and+more.+It+indicates+utilization+of+an+observability+tool+like+'phospho'+in+production.+The+concept+of+LLM+as+a+judge+is+also+mentioned.\\n5.+Multimodality+and+the+need+for+rapid+iteration+are+outlined.\\n6.+They+mention+some+challenges+in+the+sequential+applications+and+language+evaluation.\\n7.+There+are+references+to+a+company+Rakam+AI+and+its+CEO,+Jean+de+Bodinat.\\n8.+Some+potential+issues+related+to+data+authorization+and+health+software+are+alluded+to.\\n\\nPlease+note+that+the+information+is+fragmented,+which+might+make+the+understanding+a+bit+complex,+and+the+interpretation+might+not+be+100%25+accurate."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte."},{"role":"assistant","content":"1.+Restez+calme+et+patient.\\n2.+Faites+preuve+de+compréhension+et+d'empathie.\\n3.+Ignorez+le+comportement+inapproprié+lorsque+cela+est+sécuritaire.\\n4.+Aidez+votre+enfant+à+exprimer+ses+sentiments.\\n5.+Renforcez+le+comportement+positif."},{"role":"user","content":"Quels+sont+les+documents+dans+ta+mémoire+?"},{"role":"assistant","content":"Je+suis+désolé,+il+semble+y+avoir+une+malentendu.+En+tant+qu'assistant+AI,+je+ne+stocke+pas+de+documents+dans+ma+mémoire.+J'ai+accès+à+une+vaste+quantité+d'informations+et+de+connaissances,+mais+je+ne+garde+pas+de+documents+ou+de+fichiers+spécifiques.+Cependant,+je+peux+me+souvenir+des+informations+de+nos+conversations+précédentes+pour+maintenir+une+conversation+cohérente."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte."},{"role":"assistant","content":"1.+Restez+calme+et+patient.\\n2.+Faites+preuve+de+compréhension+et+d'empathie.\\n3.+Ignorez+le+comportement+inapproprié+lorsque+cela+est+sécuritaire.\\n4.+Aidez+votre+enfant+à+exprimer+ses+sentiments.\\n5.+Renforcez+le+comportement+positif."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.+Répond+à+l'aide+des+documents+dans+ta+mémoire."},{"role":"assistant","content":"En+tant+qu'assistant+IA,+je+tiens+à+préciser+que+je+ne+stocke+pas+de+documents+dans+ma+mémoire.+Néanmoins,+en+me+basant+sur+des+principes+généralement+acceptés+en+psychologie,+voici+comment+réagir+lorsque+votre+enfant+fait+une+crise+:\\n\\n1.+Restez+calme+:+votre+réaction+peut+influencer+celle+de+votre+enfant.\\n2.+Ne+punissez+pas+pendant+la+crise+:+attendez+que+votre+enfant+soit+calmé.\\n3.+Montrez+de+l'empathie+:+faites+comprendre+à+votre+enfant+que+vous+comprenez+ses+sentiments.\\n4.+Ignorez+le+comportement+négatif+(si+possible)+:+cela+peut+désamorcer+la+situation.\\n5.+Communiquez+clairement+et+simplement+:+aidez+votre+enfant+à+comprendre+la+situation.\\n"},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.+Répond+à+l'aide+des+documents+dans+ta+mémoire."},{"role":"assistant","content":"1.+Restez+calme+et+serein.\\n2.+Écoutez+et+montrez+de+l'empathie+pour+les+sentiments+de+l'enfant.\\n3.+Assurez-vous+que+l'environnement+est+sûr.\\n4.+Parlez+avec+des+mots+simples+pour+aider+à+identifier+les+émotions.\\n5.+Encouragez+des+comportements+positifs+une+fois+la+crise+passée."},{"role":"user","content":"Quelles+sont+les+meilleures+manières+de+réagit+lorsque+son+enfant+fait+une+crise+?+Fais+une+réponse+courte.+Répond+à+l'aide+des+documents+dans+ta+mémoire."},{"role":"assistant","content":"Je+suis+désolé,+mais+je+n'ai+pas+accès+à+des+documents+spécifiques+ou+à+des+archives.+Cependant,+je+peux+vous+donner+quelques+conseils+généraux+basés+sur+des+principes+pédagogiques+largement+acceptés+:\\n\\n1.+**Restez+calme**+:+Votre+propre+calme+peut+aider+à+désamorcer+la+situation.\\n2.+**Montrez+de+l'empathie**+:+Faites+savoir+à+votre+enfant+que+vous+comprenez+qu'il+est+bouleversé.\\n3.+**Créez+un+environnement+sûr**+:+Assurez-vous+que+votre+enfant+et+les+autres+autour+de+lui+sont+en+sécurité.\\n4.+**Aidez+à+identifier+les+émotions**+:+Encouragez+votre+enfant+à+exprimer+ce+qu'il+ressent+avec+des+mots.\\n5.+**Récompensez+le+comportement+positif**+:+Une+fois+la+crise+passée,+reconnaissez+et+renforcez+les+comportements+appropriés.+\\n\\nCes+stratégies+peuvent+aider+à+gérer+les+crises+de+manière+constructive."},{"role":"user","content":"How+to+praise+children+the+right+way+?"}] HTTP/1.1" 200 -
-Deleting original file cache/downloads/#1 Parenting Psychologist_ What Is Over-Parenting & Are You Doing It_.webm (pass -k to keep)
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:13:32] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:13:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:13:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:16:43] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:16:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 11:16:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:00] "GET /files HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:00] "GET /static/css/style_file.css HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:00] "GET /static/js/script_file.js HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:01] "GET /list_files HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:01] "GET /file_size/How_to_Talk_So_Kids_Will_Listen__Listen_So_Kids_Will_Talk__PDFDrive_.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:01] "GET /file_size/transcript_49ad73b7-ba38-490f-a2ce-a4e8fca34db7.txt HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:01] "GET /file_size/It_s_So_Amazing._A_Book_About_Eggs_Sperm_Birth_Babies_and_Families__PDFDrive_.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:01] "GET /file_size/Parent_Effectiveness_Training__-_Dr._Thomas_Gordon_Nobel_Peace_P.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:01] "GET /file_size/Whose_job_is_it_to_educate_our_children____Helen_ODonnell___TEDxNantwich.txt HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:01] "GET /file_size/Beyond_Birds_and_Bees_-_Rough_Bonnie_J._.pdf HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:03] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:03] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:03] "GET /static/js/script.js HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:47:12] "GET /chat?message=salut&api_key=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&provider=openai&nb_results=5&history=[{"role":"user","content":"salut"}] HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:58:07] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:58:07] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:58:07] "GET /static/js/script.js HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 16:58:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 17:04:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-ERROR:root:Clé API ou message manquant
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 17:04:36] "[31m[1mGET /chat?message=What…ntuitive+advice+to+praising+children+%253F%2522%257D%255D' HTTP/1.1[0m" 400 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 18:03:50] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:136.244.116.133 - - [07/Feb/2025 19:25:37] "[33mGET /.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:18] "GET /youtube/ HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:18] "[36mGET /static/css/style_yt.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:18] "[36mGET /static/js/script_yt.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:38] "GET /youtube/ HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:38] "[36mGET /static/css/style_yt.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:39] "GET /static/js/script_yt.js HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:48] "POST /youtube/search HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:50] "POST /youtube/search HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:52] "POST /youtube/download HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:52] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:53] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+[youtube] Extracting URL: https://www.youtube.com/watch?v=MAwkpQWEQS8&pp=ygUraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1NQXdrcFFXRVFTOA%3D%3D
+[youtube] MAwkpQWEQS8: Downloading webpage
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:55] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+[youtube] MAwkpQWEQS8: Downloading tv client config
+[youtube] MAwkpQWEQS8: Downloading player 5ae7d525
+[youtube] MAwkpQWEQS8: Downloading tv player API JSON
+[youtube] MAwkpQWEQS8: Downloading ios player API JSON
+[youtube] MAwkpQWEQS8: Downloading m3u8 information
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:56] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+[info] MAwkpQWEQS8: Downloading 1 format(s): 251
+[download] Destination: cache/downloads/How to Use Psychology to Make WINNING Facebook Ads (with Sarah Levinger).webm
+[download]   0.0% of   34.36MiB at   48.52KiB/s ETA 12:06[download]   0.0% of   34.36MiB at  135.31KiB/s ETA 04:20[download]   0.0% of   34.36MiB at  298.87KiB/s ETA 01:57[download]   0.0% of   34.36MiB at  609.28KiB/s ETA 00:57[download]   0.1% of   34.36MiB at    1.18MiB/s ETA 00:29[download]   0.2% of   34.36MiB at    1.28MiB/s ETA 00:26[download]   0.4% of   34.36MiB at    1.74MiB/s ETA 00:19[download]   0.7% of   34.36MiB at    2.59MiB/s ETA 00:13[download]   1.5% of   34.36MiB at    4.17MiB/s ETA 00:08[download]   2.9% of   34.36MiB at    6.85MiB/s ETA 00:04[download]   5.8% of   34.36MiB at   11.51MiB/s ETA 00:02[download]  11.6% of   34.36MiB at   17.76MiB/s ETA 00:01[download]  23.3% of   34.36MiB at   24.56MiB/s ETA 00:01[download]  28.1% of   34.36MiB at   26.70MiB/s ETA 00:00[download]  28.1% of   34.36MiB at  Unknown B/s ETA Unknown[download]  28.1% of   34.36MiB at    1.75MiB/s ETA 00:14  [download]  28.1% of   34.36MiB at    2.50MiB/s ETA 00:09[download]  28.2% of   34.36MiB at    3.96MiB/s ETA 00:06[download]  28.2% of   34.36MiB at    6.49MiB/s ETA 00:03[download]  28.3% of   34.36MiB at   10.29MiB/s ETA 00:02[download]  28.5% of   34.36MiB at   17.81MiB/s ETA 00:01[download]  28.8% of   34.36MiB at   30.87MiB/s ETA 00:00[download]  29.6% of   34.36MiB at   18.61MiB/s ETA 00:01[download]  31.0% of   34.36MiB at   25.12MiB/s ETA 00:00[download]  33.9% of   34.36MiB at   31.01MiB/s ETA 00:00[download]  39.8% of   34.36MiB at   34.39MiB/s ETA 00:00[download]  51.4% of   34.36MiB at   37.06MiB/s ETA 00:00[download]  55.8% of   34.36MiB at   38.31MiB/s ETA 00:00[download]  55.8% of   34.36MiB at  Unknown B/s ETA Unknown[download]  55.8% of   34.36MiB at    1.59MiB/s ETA 00:09  [download]  55.8% of   34.36MiB at    2.29MiB/s ETA 00:06[download]  55.9% of   34.36MiB at    3.63MiB/s ETA 00:04[download]  55.9% of   34.36MiB at    5.93MiB/s ETA 00:02[download]  56.0% of   34.36MiB at    9.44MiB/s ETA 00:01[download]  56.2% of   34.36MiB at   16.42MiB/s ETA 00:00[download]  56.5% of   34.36MiB at   28.43MiB/s ETA 00:00[download]  57.3% of   34.36MiB at   46.66MiB/s ETA 00:00[download]  58.7% of   34.36MiB at   24.68MiB/s ETA 00:00[download]  61.6% of   34.36MiB at   30.50MiB/s ETA 00:00[download]  67.5% of   34.36MiB at   34.09MiB/s ETA 00:00[download]  79.1% of   34.36MiB at   36.44MiB/s ETA 00:00[download]  84.2% of   34.36MiB at   38.14MiB/s ETA 00:00[download]  84.2% of   34.36MiB at  Unknown B/s ETA Unknown[download]  84.2% of   34.36MiB at    1.65MiB/s ETA 00:03  [download]  84.2% of   34.36MiB at    2.39MiB/s ETA 00:02[download]  84.3% of   34.36MiB at    3.78MiB/s ETA 00:01[download]  84.3% of   34.36MiB at    6.07MiB/s ETA 00:00[download]  84.4% of   34.36MiB at    9.62MiB/s ETA 00:00[download]  84.6% of   34.36MiB at   16.78MiB/s ETA 00:00[download]  84.9% of   34.36MiB at   29.27MiB/s ETA 00:00[download]  85.7% of   34.36MiB at   47.17MiB/s ETA 00:00[download]  87.1% of   34.36MiB at   42.93MiB/s ETA 00:00[download]  90.0% of   34.36MiB at   40.74MiB/s ETA 00:00[download]  95.9% of   34.36MiB at   39.83MiB/s ETA 00:00[download] 100.0% of   34.36MiB at   40.99MiB/s ETA 00:00[download] 100% of   34.36MiB in 00:00:01 at 21.92MiB/s  
+[ExtractAudio] Destination: cache/downloads/How to Use Psychology to Make WINNING Facebook Ads (with Sarah Levinger).mp3
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:54:58] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:00] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:02] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:03] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:04] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:05] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:06] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:08] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:09] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:11] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:13] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:15] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:17] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:19] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:21] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:23] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:25] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:27] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:29] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:31] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:33] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:35] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:37] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+Deleting original file cache/downloads/How to Use Psychology to Make WINNING Facebook Ads (with Sarah Levinger).webm (pass -k to keep)
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:39] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:41] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:43] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:45] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:47] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:49] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:51] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:53] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:55] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:57] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:55:59] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:01] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:03] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:05] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:07] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:09] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:11] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:13] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:15] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:17] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:19] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:21] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:23] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:25] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:27] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:29] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:31] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:33] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:35] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:37] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:40] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:41] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:43] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:44] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:45] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:46] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:48] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:49] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:50] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:51] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:53] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:54] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:55] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:56] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:57] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:56:59] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:00] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:01] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:02] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:04] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:05] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:06] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:07] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:09] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:10] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:11] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:12] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:14] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:15] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:16] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:17] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:18] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:20] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:21] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:22] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:23] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:25] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:26] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:27] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:28] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:30] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:31] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:32] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:33] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:34] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:36] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:37] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:38] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:39] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:41] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:42] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:43] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:44] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:46] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:47] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:48] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:49] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:51] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:52] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:53] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:54] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:55] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:57] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:58] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:57:59] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:00] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:02] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:03] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:04] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:05] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:07] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:08] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:09] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:10] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:12] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:13] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:14] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:15] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:16] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:18] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:19] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:20] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:21] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:23] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:58:24] "GET /youtube/status/3c8c0845-5c24-4c2c-8f4e-2ed475b68743 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:59:25] "GET /static/transcripts/transcript_3c8c0845-5c24-4c2c-8f4e-2ed475b68743.txt HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 02:59:57] "POST /youtube/search HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:00] "POST /youtube/download HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:00] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:01] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+[youtube] Extracting URL: https://www.youtube.com/watch?v=5V0U-Qf9fkc&pp=ygUraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj01VjBVLVFmOWZrYw%3D%3D
+[youtube] 5V0U-Qf9fkc: Downloading webpage
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:03] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+[youtube] 5V0U-Qf9fkc: Downloading tv client config
+[youtube] 5V0U-Qf9fkc: Downloading player 5ae7d525
+[youtube] 5V0U-Qf9fkc: Downloading tv player API JSON
+[youtube] 5V0U-Qf9fkc: Downloading ios player API JSON
+[youtube] 5V0U-Qf9fkc: Downloading m3u8 information
+[info] 5V0U-Qf9fkc: Downloading 1 format(s): 251
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:04] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+[download] Destination: cache/downloads/The COMPLETE Guide to Facebook Ads Research.webm
+[download]   0.0% of   18.40MiB at   46.57KiB/s ETA 06:45[download]   0.0% of   18.40MiB at  130.31KiB/s ETA 02:24[download]   0.0% of   18.40MiB at  288.84KiB/s ETA 01:05[download]   0.1% of   18.40MiB at  586.90KiB/s ETA 00:32[download]   0.2% of   18.40MiB at    1.15MiB/s ETA 00:16[download]   0.3% of   18.40MiB at    1.24MiB/s ETA 00:14[download]   0.7% of   18.40MiB at    1.70MiB/s ETA 00:10[download]   1.4% of   18.40MiB at    2.53MiB/s ETA 00:07[download]   2.7% of   18.40MiB at    4.09MiB/s ETA 00:04[download]   5.4% of   18.40MiB at    6.81MiB/s ETA 00:02[download]  10.9% of   18.40MiB at   11.47MiB/s ETA 00:01[download]  21.7% of   18.40MiB at   17.68MiB/s ETA 00:00[download]  43.5% of   18.40MiB at   19.08MiB/s ETA 00:00[download]  53.3% of   18.40MiB at   21.45MiB/s ETA 00:00[download]  53.3% of   18.40MiB at  Unknown B/s ETA Unknown[download]  53.3% of   18.40MiB at    1.64MiB/s ETA 00:05  [download]  53.3% of   18.40MiB at    2.27MiB/s ETA 00:03[download]  53.4% of   18.40MiB at    3.51MiB/s ETA 00:02[download]  53.4% of   18.40MiB at    5.77MiB/s ETA 00:01[download]  53.6% of   18.40MiB at    9.82MiB/s ETA 00:00[download]  54.0% of   18.40MiB at   16.23MiB/s ETA 00:00[download]  54.6% of   18.40MiB at   27.98MiB/s ETA 00:00[download]  56.0% of   18.40MiB at   46.26MiB/s ETA 00:00[download]  58.7% of   18.40MiB at   42.32MiB/s ETA 00:00[download]  64.1% of   18.40MiB at   40.65MiB/s ETA 00:00[download]  75.0% of   18.40MiB at   11.76MiB/s ETA 00:00[download]  96.7% of   18.40MiB at   16.57MiB/s ETA 00:00[download] 100.0% of   18.40MiB at   17.49MiB/s ETA 00:00[download] 100% of   18.40MiB in 00:00:01 at 13.29MiB/s  
+[ExtractAudio] Destination: cache/downloads/The COMPLETE Guide to Facebook Ads Research.mp3
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:06] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:08] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:10] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:12] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:14] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:16] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:18] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:20] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:22] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:24] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:26] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+Deleting original file cache/downloads/The COMPLETE Guide to Facebook Ads Research.webm (pass -k to keep)
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:28] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:30] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:32] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:34] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:36] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:38] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:40] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:42] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:44] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:46] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:48] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:50] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:52] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:54] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:56] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:04:58] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:00] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:02] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:04] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:06] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:08] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:10] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:12] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:14] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:16] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:18] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:20] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:22] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:24] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:26] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:28] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:30] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:32] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:34] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:36] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:38] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:40] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:42] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:44] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:46] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:48] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:50] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:52] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:54] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:56] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:05:58] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:06:00] "GET /youtube/status/5ca93c9b-8291-4700-b783-cdad0d71da2f HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:11:35] "GET /static/transcripts/transcript_5ca93c9b-8291-4700-b783-cdad0d71da2f.txt HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:16:19] "POST /youtube/search HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:16:27] "POST /youtube/search HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:19:40] "POST /youtube/search HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:19:48] "POST /youtube/search HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:19:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:19:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:19:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:19:54] "[32mGET /youtube HTTP/1.1[0m" 308 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:19:54] "GET /youtube/ HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:19:54] "[36mGET /static/js/script_yt.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:19:54] "[36mGET /static/css/style_yt.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:19:59] "POST /youtube/search HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:02] "POST /youtube/download HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:03] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:04] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+[youtube] Extracting URL: https://www.youtube.com/watch?v=SmNpVtfIRHw&pp=ygUraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1TbU5wVnRmSVJIdw%3D%3D
+[youtube] SmNpVtfIRHw: Downloading webpage
+[youtube] SmNpVtfIRHw: Downloading tv client config
+[youtube] SmNpVtfIRHw: Downloading player 5ae7d525
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:05] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+[youtube] SmNpVtfIRHw: Downloading tv player API JSON
+[youtube] SmNpVtfIRHw: Downloading ios player API JSON
+[youtube] SmNpVtfIRHw: Downloading m3u8 information
+[info] SmNpVtfIRHw: Downloading 1 format(s): 251
+[download] Destination: cache/downloads/The ULTIMATE Guide to Facebook Image Ads.webm
+[download]   0.0% of   31.54MiB at  Unknown B/s ETA Unknown[download]   0.0% of   31.54MiB at    1.22MiB/s ETA 00:26  [download]   0.0% of   31.54MiB at    1.90MiB/s ETA 00:16[download]   0.0% of   31.54MiB at    2.99MiB/s ETA 00:10[download]   0.1% of   31.54MiB at    5.06MiB/s ETA 00:06[download]   0.2% of   31.54MiB at    3.39MiB/s ETA 00:09[download]   0.4% of   31.54MiB at    3.60MiB/s ETA 00:08[download]   0.8% of   31.54MiB at    5.01MiB/s ETA 00:06[download]   1.6% of   31.54MiB at    7.77MiB/s ETA 00:03[download]   3.2% of   31.54MiB at   12.22MiB/s ETA 00:02[download]   6.3% of   31.54MiB at   13.49MiB/s ETA 00:02[download]  12.7% of   31.54MiB at   20.12MiB/s ETA 00:01[download]  25.4% of   31.54MiB at   22.59MiB/s ETA 00:01[download]  30.5% of   31.54MiB at   22.35MiB/s ETA 00:00[download]  30.5% of   31.54MiB at  Unknown B/s ETA Unknown[download]  30.5% of   31.54MiB at    1.91MiB/s ETA 00:11  [download]  30.5% of   31.54MiB at    2.70MiB/s ETA 00:08[download]  30.5% of   31.54MiB at    4.25MiB/s ETA 00:05[download]  30.6% of   31.54MiB at    6.99MiB/s ETA 00:03[download]  30.7% of   31.54MiB at   11.79MiB/s ETA 00:01[download]  30.9% of   31.54MiB at   20.01MiB/s ETA 00:01[download]  31.3% of   31.54MiB at   33.57MiB/s ETA 00:00[download]  32.1% of   31.54MiB at   16.46MiB/s ETA 00:01INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:07] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+[download]  33.7% of   31.54MiB at   14.90MiB/s ETA 00:01[download]  36.8% of   31.54MiB at   14.77MiB/s ETA 00:01[download]  43.2% of   31.54MiB at   19.73MiB/s ETA 00:00[download]  55.9% of   31.54MiB at   20.94MiB/s ETA 00:00[download]  61.6% of   31.54MiB at   20.17MiB/s ETA 00:00[download]  61.6% of   31.54MiB at  Unknown B/s ETA Unknown[download]  61.6% of   31.54MiB at    1.65MiB/s ETA 00:07  [download]  61.6% of   31.54MiB at    2.40MiB/s ETA 00:05[download]  61.7% of   31.54MiB at    3.85MiB/s ETA 00:03[download]  61.7% of   31.54MiB at    6.34MiB/s ETA 00:01[download]  61.8% of   31.54MiB at   10.69MiB/s ETA 00:01[download]  62.0% of   31.54MiB at   18.36MiB/s ETA 00:00[download]  62.4% of   31.54MiB at   31.58MiB/s ETA 00:00[download]  63.2% of   31.54MiB at   47.39MiB/s ETA 00:00[download]  64.8% of   31.54MiB at   14.83MiB/s ETA 00:00[download]  68.0% of   31.54MiB at   14.44MiB/s ETA 00:00[download]  74.3% of   31.54MiB at   19.06MiB/s ETA 00:00[download]  87.0% of   31.54MiB at   21.77MiB/s ETA 00:00[download]  92.1% of   31.54MiB at   19.25MiB/s ETA 00:00[download]  92.1% of   31.54MiB at  Unknown B/s ETA Unknown[download]  92.1% of   31.54MiB at    1.65MiB/s ETA 00:01  [download]  92.1% of   31.54MiB at    2.22MiB/s ETA 00:01[download]  92.1% of   31.54MiB at    3.45MiB/s ETA 00:00[download]  92.1% of   31.54MiB at    5.65MiB/s ETA 00:00[download]  92.2% of   31.54MiB at    9.56MiB/s ETA 00:00[download]  92.4% of   31.54MiB at   16.48MiB/s ETA 00:00[download]  92.8% of   31.54MiB at   28.32MiB/s ETA 00:00[download]  93.6% of   31.54MiB at   48.23MiB/s ETA 00:00[download]  95.2% of   31.54MiB at   28.16MiB/s ETA 00:00[download]  98.4% of   31.54MiB at   19.70MiB/s ETA 00:00[download] 100.0% of   31.54MiB at   18.57MiB/s ETA 00:00[download] 100% of   31.54MiB in 00:00:01 at 17.38MiB/s  
+[ExtractAudio] Destination: cache/downloads/The ULTIMATE Guide to Facebook Image Ads.mp3
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:09] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:11] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:13] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:15] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:17] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:19] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:21] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:23] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:25] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:27] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:29] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:31] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:33] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:35] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:37] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:39] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:41] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:43] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+Deleting original file cache/downloads/The ULTIMATE Guide to Facebook Image Ads.webm (pass -k to keep)
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:45] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:47] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:49] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:51] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:53] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:55] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:57] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:20:59] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:01] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:02] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:04] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:05] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:06] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:07] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:09] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:10] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:11] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:12] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:14] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:16] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:18] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:20] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:22] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:24] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:25] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:27] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:28] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:29] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:31] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:32] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:34] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:35] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:36] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:37] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:39] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:41] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:43] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:45] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:47] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:49] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:51] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:53] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:55] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:57] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:21:59] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:01] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:03] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:05] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:07] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:09] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:11] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:13] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:15] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:17] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:19] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:21] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:23] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:25] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:27] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:29] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:31] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:33] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:35] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:37] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:39] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:41] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:43] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:45] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:47] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:49] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:51] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:53] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:55] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:57] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:22:59] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:23:01] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:23:03] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:23:05] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:23:07] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:23:09] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:23:11] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:23:13] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:23:15] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:23:17] "GET /youtube/status/643c9844-fa6b-4f65-90e1-3ba80f65d4f1 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:30:13] "GET /static/transcripts/transcript_643c9844-fa6b-4f65-90e1-3ba80f65d4f1.txt HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:30:13] "GET /static/transcripts/transcript_643c9844-fa6b-4f65-90e1-3ba80f65d4f1.txt HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:31:35] "POST /youtube/search HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:02] "POST /youtube/download HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:02] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:04] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+[youtube] Extracting URL: https://www.youtube.com/watch?v=To-6ETk-wMg&pp=ygUraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1TbU5wVnRmSVJIdw%3D%3D
+[youtube] To-6ETk-wMg: Downloading webpage
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:05] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+[youtube] To-6ETk-wMg: Downloading tv client config
+[youtube] To-6ETk-wMg: Downloading player 5ae7d525
+[youtube] To-6ETk-wMg: Downloading tv player API JSON
+[youtube] To-6ETk-wMg: Downloading ios player API JSON
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:06] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+[youtube] To-6ETk-wMg: Downloading m3u8 information
+[info] To-6ETk-wMg: Downloading 1 format(s): 251
+[download] Destination: cache/downloads/Make VIRAL Image Ads For Facebook Only Using Canva.webm
+[download]   0.0% of    5.51MiB at   46.97KiB/s ETA 02:00[download]   0.1% of    5.51MiB at  130.94KiB/s ETA 00:43[download]   0.1% of    5.51MiB at  290.62KiB/s ETA 00:19[download]   0.3% of    5.51MiB at  597.89KiB/s ETA 00:09[download]   0.5% of    5.51MiB at    1.14MiB/s ETA 00:04[download]   1.1% of    5.51MiB at    1.24MiB/s ETA 00:04[download]   2.3% of    5.51MiB at    1.76MiB/s ETA 00:03[download]   4.5% of    5.51MiB at    2.59MiB/s ETA 00:02[download]   9.1% of    5.51MiB at    4.14MiB/s ETA 00:01[download]  18.1% of    5.51MiB at    6.88MiB/s ETA 00:00[download]  36.3% of    5.51MiB at   11.54MiB/s ETA 00:00[download]  72.6% of    5.51MiB at   17.91MiB/s ETA 00:00[download] 100.0% of    5.51MiB at   21.27MiB/s ETA 00:00[download] 100% of    5.51MiB in 00:00:00 at 11.96MiB/s  
+[ExtractAudio] Destination: cache/downloads/Make VIRAL Image Ads For Facebook Only Using Canva.mp3
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:07] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:09] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:10] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:11] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:12] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:14] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+Deleting original file cache/downloads/Make VIRAL Image Ads For Facebook Only Using Canva.webm (pass -k to keep)
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:15] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:16] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:17] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:18] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:20] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:21] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:22] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:24] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:26] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:28] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:30] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:32:32] "GET /youtube/status/70cfba1f-74c4-44a7-9469-504a51fcd9f2 HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:33:59] "GET /static/transcripts/transcript_70cfba1f-74c4-44a7-9469-504a51fcd9f2.txt HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:34:37] "GET /youtube/ HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:34:37] "POST /youtube/search HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:34:37] "[36mGET /static/css/style_yt.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:34:37] "[36mGET /static/js/script_yt.js HTTP/1.1[0m" 304 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:34:52] "POST /youtube/search HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:35:32] "POST /youtube/search HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:36:57] "POST /youtube/search HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:39:29] "POST /youtube/search HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:39:31] "POST /youtube/search HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:39:32] "POST /youtube/search HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:40:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:40:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:40:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:40:19] "GET /youtube/ HTTP/1.1" 200 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:40:19] "[36mGET /static/css/style_yt.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:40:20] "[36mGET /static/js/script_yt.js HTTP/1.1[0m" 304 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:40:27] "POST /youtube/search HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:49:50] "POST /youtube/search HTTP/1.1" 200 -
+ERROR:root:Error during video search: Message: 
+
+INFO:werkzeug:136.244.116.133 - - [02/Mar/2025 03:53:43] "POST /youtube/search HTTP/1.1" 200 -
+If pyktok does not operate as expected, you may find it helpful to run the 'specify_browser' function. 'specify_browser' takes as its sole argument a string representing a browser installed on your system, e.g. "chrome," "firefox," "edge," etc.
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:18900
+ * Running on http://192.168.1.33:18900
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 285-203-578
